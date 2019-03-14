@@ -1,4 +1,4 @@
-xivapi.com - v3
+# xivapi.com - v3 [![Build Status](https://travis-ci.org/xivapi/xivapi.com-v3.svg?branch=master)](https://travis-ci.org/xivapi/xivapi.com-v3)
 
 
 ## XDebug
