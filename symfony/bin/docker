@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker exec xivapicom-v3_php_1 "$@"

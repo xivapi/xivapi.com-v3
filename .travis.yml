@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 7.3
+  
+install:
+  - git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
+  - cd $TRAVIS_REPO_SLUG
+  
+script: 
+  - cd symfony
+  - composer install
+
+branches:
+  only:
+  - master
+  - dev
