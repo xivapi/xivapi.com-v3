@@ -8,11 +8,10 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 class SaintCoinach
 {
-    const SAVE_PATH        = __DIR__.'/data/';
-    const SCHEMA_FILENAME  = __DIR__ . '/data/SaintCoinach.Cmd/ex.json';
-    const SCHEMA_DIRECTORY = __DIR__ . '/data/SaintCoinach.Cmd';
-    const DOCUMENTS_FOLDER = __DIR__ . '/data/documents/';
-    const GAME_PATH        = 'C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn';
+    const DATA_STORAGE_PATH  = __DIR__.'/data/';
+    const SAINT_EX_FILENAME  = __DIR__ . '/data/SaintCoinach.Cmd/ex.json';
+    const SAINT_DIRECTORY    = __DIR__ . '/data/SaintCoinach.Cmd';
+    const GAME_INSTALL_PATH  = 'C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn';
 
     /** @var ConsoleOutput */
     private $console;
@@ -42,7 +41,7 @@ class SaintCoinach
 
         // Download
         $download = $build['browser_download_url'];
-        $filename = self::SAVE_PATH . 'SaintCoinach.Cmd.zip';
+        $filename = self::DATA_STORAGE_PATH . 'SaintCoinach.Cmd.zip';
         $this->console->writeln("Downloading: <info>{$download}</info>");
         $this->console->writeln("Save Path: <info>{$filename}</info>");
 
@@ -50,7 +49,7 @@ class SaintCoinach
 
         // extract it
         $this->console->writeln("Extracting: <info>{$filename}</info>");
-        $extractFolder = self::SAVE_PATH . 'SaintCoinach.Cmd';
+        $extractFolder = self::DATA_STORAGE_PATH . 'SaintCoinach.Cmd';
 
         $zip = new \ZipArchive;
         $zip->open($filename);
@@ -70,12 +69,12 @@ class SaintCoinach
      */
     public function schema()
     {
-        if (!file_exists(self::SCHEMA_FILENAME)) {
-            throw new \Exception("SaintCoinach schema ex.json file missing at: ". self::SCHEMA_FILENAME);
+        if (!file_exists(self::SAINT_EX_FILENAME)) {
+            throw new \Exception("SaintCoinach schema ex.json file missing at: ". self::SAINT_EX_FILENAME);
         }
 
         $schema = \GuzzleHttp\json_decode(
-            file_get_contents(self::SCHEMA_FILENAME)
+            file_get_contents(self::SAINT_EX_FILENAME)
         );
 
         return $schema;
@@ -87,14 +86,14 @@ class SaintCoinach
      */
     public function version()
     {
-        $dirs = glob(self::SCHEMA_DIRECTORY . '/*' , GLOB_ONLYDIR);
+        $dirs = glob(self::SAINT_DIRECTORY . '/*' , GLOB_ONLYDIR);
 
         // there should only be 1, if not, throw exception to sort this
         if (count($dirs) > 1) {
             throw new \Exception("there is more than 1 directory in the SaintCoinach extracted location, delete old extractions");
         }
 
-        return str_ireplace([self::SCHEMA_DIRECTORY, '/'], null, $dirs[0]);
+        return str_ireplace([self::SAINT_DIRECTORY, '/'], null, $dirs[0]);
     }
 
     /**
@@ -102,7 +101,7 @@ class SaintCoinach
      */
     public function directory()
     {
-        return self::SCHEMA_DIRECTORY ."/". $this->version();
+        return self::SAINT_DIRECTORY ."/". $this->version();
     }
 
     /**
@@ -114,7 +113,7 @@ class SaintCoinach
             "{$extractFolder}/extract-{$command}.bat",
             sprintf(
                 'SaintCoinach.Cmd.exe "%s" %s /UseDefinitionVersion',
-                self::GAME_PATH,
+                self::GAME_INSTALL_PATH,
                 $command
             )
         );

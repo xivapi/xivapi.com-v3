@@ -1,5 +1,5 @@
 src/Service/SaintCoinach/data
-
+src/Service/SaintCoinach/schema
 
 ###> symfony/framework-bundle ###
 /.env.local
