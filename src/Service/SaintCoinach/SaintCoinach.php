@@ -8,9 +8,9 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 class SaintCoinach
 {
-    const DATA_STORAGE_PATH  = __DIR__.'/data/';
-    const SAINT_EX_FILENAME  = __DIR__ . '/data/SaintCoinach.Cmd/ex.json';
-    const SAINT_DIRECTORY    = __DIR__ . '/data/SaintCoinach.Cmd';
+    const DATA_STORAGE_PATH  = ROOT . '/tools/';
+    const SAINT_EX_FILENAME  = ROOT . '/tools/SaintCoinach.Cmd/ex.json';
+    const SAINT_DIRECTORY    = ROOT . '/tools/SaintCoinach.Cmd';
     const GAME_INSTALL_PATH  = 'C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn';
 
     /** @var ConsoleOutput */
@@ -29,6 +29,7 @@ class SaintCoinach
         $this->console->writeln('Downloading SaintCoinach.Cmd');
 
         // grab the latest release from github
+        $this->console->writeln('Getting latest build from github ...');
         $release  = (new Client())->api('repo')->releases()->latest('ufx', 'SaintCoinach');
         $buildTag = $release['tag_name'];
         $this->console->writeln("Latest build: <info>{$buildTag}</info>");
@@ -36,7 +37,13 @@ class SaintCoinach
         // check for SaintCoinach.Cmd release
         $build = $release['assets'][1] ?? false;
         if ($build === false) {
-            throw new \Exception('Could not find Saint Coinach cmd release at Download Position 1');
+            throw new \Exception('Could not find SaintCoinach.Cmd release at Download Position 1');
+        }
+        
+        // make data storage path if it does not exist
+        $this->console->writeln('Checking data directory');
+        if (is_dir(self::DATA_STORAGE_PATH) == false) {
+            mkdir(self::DATA_STORAGE_PATH);
         }
 
         // Download
@@ -118,5 +125,4 @@ class SaintCoinach
             )
         );
     }
-
 }
