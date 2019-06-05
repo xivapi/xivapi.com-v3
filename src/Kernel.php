@@ -17,7 +17,7 @@ class Kernel extends BaseKernel
     
     public function __construct(string $environment, bool $debug)
     {
-        define('ROOT', __DIR__.'/../');
+        define('ROOT', __DIR__.'/..');
         parent::__construct($environment, $debug);
     }
     

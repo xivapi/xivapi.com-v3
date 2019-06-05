@@ -3,7 +3,7 @@
 namespace App\Command\GameData;
 
 use App\Command\Traits\CommandConfigureTrait;
-use App\Service\SaintCoinach\SaintCoinachSchemaGenerator;
+use App\Service\SaintCoinach\SchemaBuilder;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,17 +18,17 @@ class BuildGameSchemaCommand extends Command
         'desc' => 'Build the FFXIV Game Schema',
     ];
 
-    private $saintCoinachSchemaGenerator;
+    private $schemaBuilder;
 
-    public function __construct(SaintCoinachSchemaGenerator $saintCoinachSchemaGenerator, $name = null)
+    public function __construct(SchemaBuilder $schemaBuilder, $name = null)
     {
-        $this->saintCoinachSchemaGenerator = $saintCoinachSchemaGenerator;
+        $this->schemaBuilder = $schemaBuilder;
 
         parent::__construct($name);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->saintCoinachSchemaGenerator->build();
+        $this->schemaBuilder->build();
     }
 }

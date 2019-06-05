@@ -16,7 +16,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
  *
  * @package App\Service\SaintCoinach
  */
-class SaintCoinachSchemaGenerator
+class SchemaBuilder
 {
     const SCHEMA_SAVE_PATH = __DIR__.'/schema/';
 

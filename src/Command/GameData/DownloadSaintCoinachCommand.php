@@ -13,7 +13,7 @@ class DownloadSaintCoinachCommand extends Command
     use CommandConfigureTrait;
 
     const COMMAND = [
-        'name' => 'xiv:download:saintcoinach',
+        'name' => 'xiv:download:saintcmd',
         'desc' => 'Download the latest Saint Coinach from GitHub',
     ];
 
