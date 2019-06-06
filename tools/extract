@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+#
+# Note: This is hard coded to my PC... change paths if you use.
+# Usage:
+#   bash EXTRACT Official
+#   bash EXTRACT Korean
+#   bash EXTRACT Chinese
+#
+
+#
+# Declare the game paths
+#
+declare -A GamePaths
+GamePaths[Official]="C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn"
+GamePaths[Korean]="D:\FFXIV\Korean\Game\FFXIV"
+GamePaths[Chinese]="D:\FFXIV\Chinese\Game\FFXIV"
+
+#
+# Declare Game Languages
+#
+declare -A GameLanguages
+GameLanguages[Official]="en"
+GameLanguages[Korean]="ko"
+GameLanguages[Chinese]="chs"
+
+#
+# Set the game version
+#
+GAME_VERSION=$1
+
+ExtractGameContent() {
+    version=$1
+    gamepath=$2
+    language=$3
+
+    echo "-- Version: $version"
+    echo "-- Language: $language"
+    echo "-- Game Path: $gamepath"
+
+    # Move to custom saint schema directory
+    cd SaintCoinachCustom
+
+    # ensure history file is deleted, will cause version check which I don't need
+    rm ./SaintCoinach.History.zip
+
+    # Copy over the language specific schema
+    echo "-- Copying Schema File"
+    cp ../../data/schema_${version}.json ./ex.json
+
+    # set language and path
+    echo "-- Setting language and extract path"
+    ./SaintCoinach.Cmd.exe "${gamepath}" "lang ${language}" "setpath ${gamepath}" "lang"
+
+    # extract all raw exd
+    echo "-- Extracting Game Data!"
+    ./SaintCoinach.Cmd.exe "${gamepath}" "lang ${language}" "lang" "allrawexd"
+
+    # Rename folder so it's easier to manage
+    echo "-- Renaming folder"
+    mv ./2019* extracted
+
+    # Copy the contents of extracted to the data folder
+    echo "-- Copying extracted data"
+    cp -a ./extracted/all-raw-exd/. ././../data/gamedata/
+
+    # Finished
+    echo "-- Finished"
+    echo ""
+}
+
+ExtractGameContent $GAME_VERSION "${GamePaths[$GAME_VERSION]}" "${GameLanguages[$GAME_VERSION]}"

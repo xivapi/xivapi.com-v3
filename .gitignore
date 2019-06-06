@@ -1,6 +1,8 @@
 .idea
 /tools/SaintCoinach.Cmd*
-/gamedata
+/tools/SaintCoinachCustom
+/tools/extract_*
+/data/gamedata
 
 ###> symfony/framework-bundle ###
 /.env.local
