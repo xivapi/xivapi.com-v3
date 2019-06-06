@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
 #
+# todo - use the latest saint, but inset of "setpath" it passes in as normal and then if the version is Korean or chinese it performs a:
+# todo      rename 's/.csv$/.chs.csv/' *.csv      to replace the file extensions
+#
 # Note: This is hard coded to my PC... change paths if you use.
+#
 # Usage:
 #   bash EXTRACT Official
 #   bash EXTRACT Korean
@@ -62,7 +66,7 @@ ExtractGameContent() {
 
     # Copy the contents of extracted to the data folder
     echo "-- Copying extracted data"
-    cp -a ./extracted/all-raw-exd/. ././../data/gamedata/
+    cp -a ./extracted/raw-exd-all/. ../../data/gamedata/
 
     # Finished
     echo "-- Finished"
