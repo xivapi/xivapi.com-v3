@@ -1,76 +1,167 @@
-#!/usr/bin/env bash
+#!/usr/bin/env php
+<?php
 
-#
-# todo - use the latest saint, but inset of "setpath" it passes in as normal and then if the version is Korean or chinese it performs a:
-# todo      rename 's/.csv$/.chs.csv/' *.csv      to replace the file extensions
-#
-# Note: This is hard coded to my PC... change paths if you use.
-#
-# Usage:
-#   bash EXTRACT Official
-#   bash EXTRACT Korean
-#   bash EXTRACT Chinese
-#
-
-#
-# Declare the game paths
-#
-declare -A GamePaths
-GamePaths[Official]="C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn"
-GamePaths[Korean]="D:\FFXIV\Korean\Game\FFXIV"
-GamePaths[Chinese]="D:\FFXIV\Chinese\Game\FFXIV"
-
-#
-# Declare Game Languages
-#
-declare -A GameLanguages
-GameLanguages[Official]="en"
-GameLanguages[Korean]="ko"
-GameLanguages[Chinese]="chs"
-
-#
-# Set the game version
-#
-GAME_VERSION=$1
-
-ExtractGameContent() {
-    version=$1
-    gamepath=$2
-    language=$3
-
-    echo "-- Version: $version"
-    echo "-- Language: $language"
-    echo "-- Game Path: $gamepath"
-
-    # Move to custom saint schema directory
-    cd SaintCoinachCustom
-
-    # ensure history file is deleted, will cause version check which I don't need
-    rm ./SaintCoinach.History.zip
-
-    # Copy over the language specific schema
-    echo "-- Copying Schema File"
-    cp ../../data/schema_${version}.json ./ex.json
-
-    # set language and path
-    echo "-- Setting language and extract path"
-    ./SaintCoinach.Cmd.exe "${gamepath}" "lang ${language}" "setpath ${gamepath}" "lang"
-
-    # extract all raw exd
-    echo "-- Extracting Game Data!"
-    ./SaintCoinach.Cmd.exe "${gamepath}" "lang ${language}" "lang" "allrawexd"
-
-    # Rename folder so it's easier to manage
-    echo "-- Renaming folder"
-    mv ./2019* extracted
-
-    # Copy the contents of extracted to the data folder
-    echo "-- Copying extracted data"
-    cp -a ./extracted/raw-exd-all/. ../../data/gamedata/
-
-    # Finished
-    echo "-- Finished"
-    echo ""
+function logger(string $text)
+{
+    $date = date('Y-m-d H:i:s');
+    echo "[{$date}] {$text} \n";
 }
 
-ExtractGameContent $GAME_VERSION "${GamePaths[$GAME_VERSION]}" "${GameLanguages[$GAME_VERSION]}"
+/**
+ * Removes the History Zip file as this causes a "update prompt"
+ */
+function removeHistoryZipFile()
+{
+    @unlink(__DIR__.'/SaintCoinach.Cmd/SaintCoinach.History.zip');
+}
+
+/**
+ * Copy schema file
+ */
+function copySchemaFile($file)
+{
+    copy($file, __DIR__.'/SaintCoinach.Cmd/ex.json');
+}
+
+/**
+ * Find extract file
+ */
+function findExtractFolder($path)
+{
+    $files = glob($path . '/*' , GLOB_ONLYDIR);
+    $files = $files[0] ?: null;
+    
+    if ($files === null) {
+        die('Files not found: '. $path .' -- Did you extract them correctly?');
+    }
+    
+    return $files;
+}
+
+/**
+ * Recursively copy a directory
+ */
+function recurseCopy($src, $dst) {
+    $dir = opendir($src);
+    @mkdir($dst);
+    while(false !== ( $file = readdir($dir)) ) {
+        if (( $file != '.' ) && ( $file != '..' )) {
+            if ( is_dir($src . '/' . $file) ) {
+                recurseCopy($src . '/' . $file,$dst . '/' . $file);
+            }
+            else {
+                copy($src . '/' . $file,$dst . '/' . $file);
+            }
+        }
+    }
+    closedir($dir);
+}
+
+/**
+ * Remove an entire directory
+ */
+function removeDirectory($dir) {
+    foreach(glob($dir . '/*') as $file) {
+        if (is_dir($file)) {
+            removeDirectory($file);
+        } else {
+            @unlink($file);
+        };
+    }
+    
+    @rmdir($dir);
+}
+
+$saintCmd = __DIR__.'/SaintCoinach.Cmd/SaintCoinach.Cmd.exe';
+
+// check saint cmd exists
+if (!file_exists($saintCmd)) {
+    throw new \Exception("SaintCmd does not exist, download it first.");
+}
+
+// grab version from args
+$version = $argv[1] ?? '';
+$version = ucwords($version);
+
+if (empty($version)) {
+    throw new \Exception("Please provide a version");
+}
+
+$paths = [
+    'Official' => "C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn",
+    'Korean'   => "D:\FFXIV\Korean\Game\FFXIV",
+    'Chinese'  => "D:\FFXIV\Chinese\Game\FFXIV",
+];
+
+$languages = [
+    'Official' => "en",
+    'Korean'   => "ko",
+    'Chinese'  => "chs",
+];
+
+$path = $paths[$version];
+$lang = $languages[$version];
+
+if (!in_array($version, array_keys($languages))) {
+    throw new \Exception("Invalid version");
+}
+
+logger("Starting");
+logger("Version = {$version}");
+
+// remove history
+logger("Deleting History Zip File");
+removeHistoryZipFile();
+
+// copy across schema for this versions
+logger("Copying schema");
+copySchemaFile(__DIR__."/../data/schema_{$version}.json");
+
+// run extract
+logger("Running extract");
+logger("");
+system('cd SaintCoinach.Cmd && '. $saintCmd .' "'. $path .'" "lang '. $lang .'" "allrawexd"');
+logger("");
+
+// find extract folder
+$extractFolder = findExtractFolder(__DIR__.'/SaintCoinach.Cmd');
+
+// if we're ko or chs, we will remove all files without a .ko or .chs extension
+if (in_array($version, ['Korean','Chinese'])) {
+    Logger("Removing non-translation files for: {$version}");
+
+    $path = realpath($extractFolder);
+    foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path)) as $filename) {
+        $pi = pathinfo($filename);
+        
+        // skip if no extension (likely a directory)
+        if (empty($pi['extension'])) {
+            continue;
+        }
+        
+        $ext = explode('.', $pi['basename'], 2)[1];
+        
+        // if the ext is either chs or ko, keep the file
+        if (in_array($ext, ['chs.csv','ko.csv'])) {
+            continue;
+        }
+        
+        // remove the file
+        unlink($filename);
+    }
+}
+
+// copy all files
+logger("Copying files (may take time)...");
+logger("");
+recurseCopy("{$extractFolder}/raw-exd-all", __DIR__.'/../data/gamedata');
+
+// remove extraction folder
+logger("Removing: {$extractFolder}");
+removeDirectory($extractFolder);
+sleep(2);
+removeDirectory($extractFolder);
+logger("");
+
+// finished
+logger("Finished!");
