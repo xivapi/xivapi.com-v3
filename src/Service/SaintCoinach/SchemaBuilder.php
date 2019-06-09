@@ -18,7 +18,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
  */
 class SchemaBuilder
 {
-    const SCHEMA_SAVE_PATH = __DIR__.'/schema/';
+    const SCHEMA_SAVE_PATH = __DIR__.'/schema';
 
     /** @var SaintCoinach */
     private $saintCoinach;
@@ -80,8 +80,12 @@ class SchemaBuilder
      */
     private function saveSheetSchema($sheetName)
     {
+        if (!is_dir(self::SCHEMA_SAVE_PATH)) {
+            mkdir(self::SCHEMA_SAVE_PATH);
+        }
+        
         file_put_contents(
-            self::SCHEMA_SAVE_PATH . $sheetName . ".json",
+            self::SCHEMA_SAVE_PATH . "/{$sheetName}.json",
             json_encode($this->schema, JSON_PRETTY_PRINT)
         );
 
