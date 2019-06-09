@@ -1,0 +1,71 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Npc",
+        "target": "ENpcResident"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Quest{Required}",
+        "target": "Quest"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "DeliveriesPerWeek"
+    },
+    {
+        "type": "array_basic",
+        "start": 5,
+        "finish": 10,
+        "count": 6,
+        "name": "SupplyIndex"
+    },
+    {
+        "type": "array_basic",
+        "start": 11,
+        "finish": 16,
+        "count": 6,
+        "name": "Satisfaction{Required}"
+    },
+    {
+        "type": "array_group",
+        "start": 17,
+        "finish": 19,
+        "count": 3,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Item",
+                "type": "array",
+                "start": 0,
+                "finish": 5,
+                "count": 6,
+                "link_sheet": "Item"
+            },
+            {
+                "offset": 1,
+                "name": "ItemCount",
+                "type": "array",
+                "start": 6,
+                "finish": 11,
+                "count": 6
+            },
+            {
+                "offset": 2,
+                "name": "IsHQ",
+                "type": "array",
+                "start": 12,
+                "finish": 17,
+                "count": 6
+            }
+        ]
+    },
+    {
+        "type": "icon",
+        "index": 71,
+        "name": "Icon"
+    }
+]

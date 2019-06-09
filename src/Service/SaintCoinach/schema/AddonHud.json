@@ -1,0 +1,17 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Long"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Short"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Function"
+    }
+]

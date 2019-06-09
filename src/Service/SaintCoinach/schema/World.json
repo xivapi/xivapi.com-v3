@@ -1,0 +1,18 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "DataCenter",
+        "target": "WorldDCGroupType"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "IsPublic"
+    }
+]

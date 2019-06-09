@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 2,
+        "finish": 3,
+        "count": 2,
+        "name": "BNpcBase"
+    },
+    {
+        "type": "array_basic",
+        "start": 6,
+        "finish": 10,
+        "count": 5,
+        "name": "Icon"
+    }
+]

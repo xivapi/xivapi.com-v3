@@ -1,0 +1,27 @@
+[
+    {
+        "type": "array_group",
+        "start": 1,
+        "finish": 8,
+        "count": 8,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Item",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Item"
+            },
+            {
+                "offset": 1,
+                "name": "Quantity",
+                "type": "basic"
+            },
+            {
+                "offset": 2,
+                "name": "RecipeLevel",
+                "type": "basic"
+            }
+        ]
+    }
+]

@@ -1,0 +1,367 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Strength"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Dexterity"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Vitality"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Intelligence"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "Mind"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Piety"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "HP"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "MP"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "TP"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "GP"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "CP"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "PhysicalDamage"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "MagicalDamage"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "Delay"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "AdditionalEffect"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "AttackSpeed"
+    },
+    {
+        "type": "basic",
+        "index": 17,
+        "name": "BlockRate"
+    },
+    {
+        "type": "basic",
+        "index": 18,
+        "name": "BlockStrength"
+    },
+    {
+        "type": "basic",
+        "index": 19,
+        "name": "Tenacity"
+    },
+    {
+        "type": "basic",
+        "index": 20,
+        "name": "AttackPower"
+    },
+    {
+        "type": "basic",
+        "index": 21,
+        "name": "Defense"
+    },
+    {
+        "type": "basic",
+        "index": 22,
+        "name": "DirectHitRate"
+    },
+    {
+        "type": "basic",
+        "index": 23,
+        "name": "Evasion"
+    },
+    {
+        "type": "basic",
+        "index": 24,
+        "name": "MagicDefense"
+    },
+    {
+        "type": "basic",
+        "index": 25,
+        "name": "CriticalHitPower"
+    },
+    {
+        "type": "basic",
+        "index": 26,
+        "name": "CriticalHitResilience"
+    },
+    {
+        "type": "basic",
+        "index": 27,
+        "name": "CriticalHit"
+    },
+    {
+        "type": "basic",
+        "index": 28,
+        "name": "CriticalHitEvasion"
+    },
+    {
+        "type": "basic",
+        "index": 29,
+        "name": "SlashingResistance"
+    },
+    {
+        "type": "basic",
+        "index": 30,
+        "name": "PiercingResistance"
+    },
+    {
+        "type": "basic",
+        "index": 31,
+        "name": "BluntResistance"
+    },
+    {
+        "type": "basic",
+        "index": 32,
+        "name": "ProjectileResistance"
+    },
+    {
+        "type": "basic",
+        "index": 33,
+        "name": "AttackMagicPotency"
+    },
+    {
+        "type": "basic",
+        "index": 34,
+        "name": "HealingMagicPotency"
+    },
+    {
+        "type": "basic",
+        "index": 35,
+        "name": "EnhancementMagicPotency"
+    },
+    {
+        "type": "basic",
+        "index": 36,
+        "name": "EnfeeblingMagicPotency"
+    },
+    {
+        "type": "basic",
+        "index": 37,
+        "name": "FireResistance"
+    },
+    {
+        "type": "basic",
+        "index": 38,
+        "name": "IceResistance"
+    },
+    {
+        "type": "basic",
+        "index": 39,
+        "name": "WindResistance"
+    },
+    {
+        "type": "basic",
+        "index": 40,
+        "name": "EarthResistance"
+    },
+    {
+        "type": "basic",
+        "index": 41,
+        "name": "LightningResistance"
+    },
+    {
+        "type": "basic",
+        "index": 42,
+        "name": "WaterResistance"
+    },
+    {
+        "type": "basic",
+        "index": 43,
+        "name": "MagicResistance"
+    },
+    {
+        "type": "basic",
+        "index": 44,
+        "name": "Determination"
+    },
+    {
+        "type": "basic",
+        "index": 45,
+        "name": "SkillSpeed"
+    },
+    {
+        "type": "basic",
+        "index": 46,
+        "name": "SpellSpeed"
+    },
+    {
+        "type": "basic",
+        "index": 47,
+        "name": "Haste"
+    },
+    {
+        "type": "basic",
+        "index": 48,
+        "name": "Morale"
+    },
+    {
+        "type": "basic",
+        "index": 49,
+        "name": "Enmity"
+    },
+    {
+        "type": "basic",
+        "index": 50,
+        "name": "EnmityReduction"
+    },
+    {
+        "type": "basic",
+        "index": 51,
+        "name": "CarefulDesynthesis"
+    },
+    {
+        "type": "basic",
+        "index": 52,
+        "name": "EXPBonus"
+    },
+    {
+        "type": "basic",
+        "index": 53,
+        "name": "Regen"
+    },
+    {
+        "type": "basic",
+        "index": 54,
+        "name": "Refresh"
+    },
+    {
+        "type": "basic",
+        "index": 55,
+        "name": "MovementSpeed"
+    },
+    {
+        "type": "basic",
+        "index": 56,
+        "name": "Spikes"
+    },
+    {
+        "type": "basic",
+        "index": 57,
+        "name": "SlowResistance"
+    },
+    {
+        "type": "basic",
+        "index": 58,
+        "name": "PetrificationResistance"
+    },
+    {
+        "type": "basic",
+        "index": 59,
+        "name": "ParalysisResistance"
+    },
+    {
+        "type": "basic",
+        "index": 60,
+        "name": "SilenceResistance"
+    },
+    {
+        "type": "basic",
+        "index": 61,
+        "name": "BlindResistance"
+    },
+    {
+        "type": "basic",
+        "index": 62,
+        "name": "PoisonResistance"
+    },
+    {
+        "type": "basic",
+        "index": 63,
+        "name": "StunResistance"
+    },
+    {
+        "type": "basic",
+        "index": 64,
+        "name": "SleepResistance"
+    },
+    {
+        "type": "basic",
+        "index": 65,
+        "name": "BindResistance"
+    },
+    {
+        "type": "basic",
+        "index": 66,
+        "name": "HeavyResistance"
+    },
+    {
+        "type": "basic",
+        "index": 67,
+        "name": "DoomResistance"
+    },
+    {
+        "type": "basic",
+        "index": 68,
+        "name": "ReducedDurabilityLoss"
+    },
+    {
+        "type": "basic",
+        "index": 69,
+        "name": "IncreasedSpiritbondGain"
+    },
+    {
+        "type": "basic",
+        "index": 70,
+        "name": "Craftsmanship"
+    },
+    {
+        "type": "basic",
+        "index": 71,
+        "name": "Control"
+    },
+    {
+        "type": "basic",
+        "index": 72,
+        "name": "Gathering"
+    },
+    {
+        "type": "basic",
+        "index": 73,
+        "name": "Perception"
+    }
+]

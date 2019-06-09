@@ -1,0 +1,40 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "ClassJob",
+        "target": "ClassJob"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Level"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "Quest",
+        "target": "Quest"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Value"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "ClassJobCategory",
+        "target": "ClassJobCategory"
+    }
+]

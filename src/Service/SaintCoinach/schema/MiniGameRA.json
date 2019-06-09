@@ -1,0 +1,13 @@
+[
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "BGM",
+        "target": "BGM"
+    }
+]

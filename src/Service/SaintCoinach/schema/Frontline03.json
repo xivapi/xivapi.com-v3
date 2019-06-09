@@ -1,0 +1,30 @@
+[
+    {
+        "type": "array_basic",
+        "start": 10,
+        "finish": 12,
+        "count": 3,
+        "name": "EmptyIcon"
+    },
+    {
+        "type": "array_basic",
+        "start": 13,
+        "finish": 15,
+        "count": 3,
+        "name": "MaelstromIcon"
+    },
+    {
+        "type": "array_basic",
+        "start": 16,
+        "finish": 18,
+        "count": 3,
+        "name": "TwinAdderIcon"
+    },
+    {
+        "type": "array_basic",
+        "start": 19,
+        "finish": 21,
+        "count": 3,
+        "name": "ImmortalFlamesIcon"
+    }
+]

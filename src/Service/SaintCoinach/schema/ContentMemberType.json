@@ -1,0 +1,22 @@
+[
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "TanksPerParty"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "HealersPerParty"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "MeleesPerParty"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "RangedPerParty"
+    }
+]

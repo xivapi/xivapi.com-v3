@@ -1,0 +1,132 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Singular"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Adjective"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Plural"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "PossessivePronoun"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "StartsWithVowel"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Pronoun"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Article"
+    },
+    {
+        "type": "link_sheet",
+        "index": 9,
+        "name": "PlaceName",
+        "target": "PlaceName"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "HousingSize"
+    },
+    {
+        "type": "link_sheet",
+        "index": 11,
+        "name": "ExteriorRoof",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "ExteriorWall",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 13,
+        "name": "ExteriorWindow",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 14,
+        "name": "ExteriorDoor",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 15,
+        "name": "InteriorWall",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 16,
+        "name": "InteriorFlooring",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 17,
+        "name": "InteriorLighting",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 18,
+        "name": "OtherFloorWall",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 19,
+        "name": "OtherFloorFlooring",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 20,
+        "name": "OtherFloorLighting",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 21,
+        "name": "BasementWall",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 22,
+        "name": "BasementFlooring",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 23,
+        "name": "BasementLighting",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 24,
+        "name": "MansionLighting",
+        "target": "Item"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "type": "array_basic",
+        "start": 17,
+        "finish": 24,
+        "count": 8,
+        "name": "EnemyLevel"
+    },
+    {
+        "type": "array_basic",
+        "start": 25,
+        "finish": 32,
+        "count": 8,
+        "name": "BNpcName"
+    },
+    {
+        "type": "array_basic",
+        "start": 33,
+        "finish": 40,
+        "count": 8,
+        "name": "ItemsInvolved"
+    },
+    {
+        "type": "array_basic",
+        "start": 41,
+        "finish": 48,
+        "count": 8,
+        "name": "ItemsInvolvedQty"
+    },
+    {
+        "type": "array_basic",
+        "start": 49,
+        "finish": 56,
+        "count": 8,
+        "name": "ItemDropRate"
+    }
+]

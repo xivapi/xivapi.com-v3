@@ -1,0 +1,17 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Tag"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Order"
+    }
+]

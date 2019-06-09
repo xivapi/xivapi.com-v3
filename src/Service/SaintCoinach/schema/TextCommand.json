@@ -1,0 +1,27 @@
+[
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Command"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "ShortCommand"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Description"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "Alias"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "ShortAlias"
+    }
+]

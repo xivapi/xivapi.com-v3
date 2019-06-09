@@ -1,0 +1,18 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "AchievementKind",
+        "target": "AchievementKind"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "HideCategory"
+    }
+]

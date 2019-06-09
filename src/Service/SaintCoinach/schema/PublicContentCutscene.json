@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Cutscene",
+        "target": "Cutscene"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Cutscene2",
+        "target": "Cutscene"
+    }
+]

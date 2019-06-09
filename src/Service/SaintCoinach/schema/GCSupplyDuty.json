@@ -1,0 +1,28 @@
+[
+    {
+        "type": "array_repeat_repeat",
+        "start": 1,
+        "finish": 11,
+        "count": 11,
+        "repeats": {
+            "type": "array_group",
+            "start": 0,
+            "finish": 2,
+            "count": 3,
+            "repeat": [
+                {
+                    "offset": 0,
+                    "name": "Item",
+                    "type": "link_sheet",
+                    "index": null,
+                    "target": "Item"
+                },
+                {
+                    "offset": 1,
+                    "name": "ItemCount",
+                    "type": "basic"
+                }
+            ]
+        }
+    }
+]

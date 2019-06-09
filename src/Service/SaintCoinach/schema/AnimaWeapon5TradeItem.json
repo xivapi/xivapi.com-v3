@@ -1,0 +1,44 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "CrystalSand",
+        "target": "Item"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Qty"
+    },
+    {
+        "type": "array_group",
+        "start": 4,
+        "finish": 11,
+        "count": 8,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "ItemName",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Item"
+            },
+            {
+                "offset": 1,
+                "name": "IsHQ",
+                "type": "basic"
+            },
+            {
+                "offset": 2,
+                "name": "Quantity",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 28,
+        "name": "Category",
+        "target": "AnimaWeapon5PatternGroup"
+    }
+]

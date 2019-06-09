@@ -1,0 +1,40 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Key"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "TimeLimit"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Name"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "TextData{Start}",
+        "target": "PartyContentTextData"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "TextData{End}",
+        "target": "PartyContentTextData"
+    },
+    {
+        "type": "link_sheet",
+        "index": 34,
+        "name": "ContentFinderCondition",
+        "target": "ContentFinderCondition"
+    },
+    {
+        "type": "icon",
+        "index": 35,
+        "name": "Image"
+    }
+]

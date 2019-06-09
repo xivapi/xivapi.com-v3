@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "VFXNormal",
+        "target": "VFX"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "VFXWalking",
+        "target": "VFX"
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "type": "icon",
+        "index": 1,
+        "name": "Icon{Actor}"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon{Map}"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Name"
+    },
+    {
+        "type": "array_basic",
+        "start": 4,
+        "finish": 33,
+        "count": 30,
+        "name": "Script{Instruction}"
+    },
+    {
+        "type": "array_basic",
+        "start": 34,
+        "finish": 63,
+        "count": 30,
+        "name": "Script{Arg}"
+    },
+    {
+        "type": "basic",
+        "index": 67,
+        "name": "Text"
+    }
+]

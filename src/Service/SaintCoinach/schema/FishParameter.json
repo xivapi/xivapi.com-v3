@@ -1,0 +1,56 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Text"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Item",
+        "target": "Item"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "GatheringItemLevel"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "IsHidden"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "FishingRecordType",
+        "target": "FishingRecordType"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "TerritoryType",
+        "target": "TerritoryType"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "IsInLog"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "TimeRestricted"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "WeatherRestricted"
+    },
+    {
+        "type": "link_sheet",
+        "index": 11,
+        "name": "GatheringSubCategory",
+        "target": "GatheringSubCategory"
+    }
+]

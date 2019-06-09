@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Start",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "End",
+        "target": "ActionTimeline"
+    }
+]

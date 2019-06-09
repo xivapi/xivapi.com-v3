@@ -1,0 +1,47 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "EXPBonus%"
+    },
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 4,
+        "count": 3,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "BaseParam",
+                "type": "link_sheet",
+                "index": null,
+                "target": "BaseParam"
+            },
+            {
+                "offset": 1,
+                "name": "IsRelative",
+                "type": "basic"
+            },
+            {
+                "offset": 2,
+                "name": "Value",
+                "type": "basic"
+            },
+            {
+                "offset": 3,
+                "name": "Max",
+                "type": "basic"
+            },
+            {
+                "offset": 4,
+                "name": "Value{HQ}",
+                "type": "basic"
+            },
+            {
+                "offset": 5,
+                "name": "Max{HQ}",
+                "type": "basic"
+            }
+        ]
+    }
+]

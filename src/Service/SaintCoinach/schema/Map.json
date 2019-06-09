@@ -1,0 +1,71 @@
+[
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "MapIndex"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Hierarchy"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "MapMarkerRange"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Id"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "SizeFactor"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Offset{X}"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "Offset{Y}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 10,
+        "name": "PlaceName{Region}",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 11,
+        "name": "PlaceName",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "PlaceName{Sub}",
+        "target": "PlaceName"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "DiscoveryIndex"
+    },
+    {
+        "type": "link_sheet",
+        "index": 15,
+        "name": "TerritoryType",
+        "target": "TerritoryType"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "DiscoveryArrayByte"
+    }
+]

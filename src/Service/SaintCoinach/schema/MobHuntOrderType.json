@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Quest",
+        "target": "Quest"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "EventItem",
+        "target": "EventItem"
+    }
+]

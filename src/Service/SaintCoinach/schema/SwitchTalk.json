@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 17,
+        "count": 15,
+        "name": "Quest"
+    },
+    {
+        "type": "array_basic",
+        "start": 18,
+        "finish": 33,
+        "count": 16,
+        "name": "DefaultTalk"
+    }
+]

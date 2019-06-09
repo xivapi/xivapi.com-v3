@@ -1,0 +1,58 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Bg"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "PlaceName{Region}",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "PlaceName{Zone}",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "PlaceName",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "Map",
+        "target": "Map"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "TerritoryIntendedUse"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "WeatherRate"
+    },
+    {
+        "type": "link_sheet",
+        "index": 23,
+        "name": "ArrayEventHandler",
+        "target": "ArrayEventHandler"
+    },
+    {
+        "type": "link_sheet",
+        "index": 25,
+        "name": "Aetheryte",
+        "target": "Aetheryte"
+    }
+]

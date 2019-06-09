@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 6,
+        "finish": 8,
+        "count": 3,
+        "name": "ActionTimeline{Pose}"
+    },
+    {
+        "type": "array_basic",
+        "start": 21,
+        "finish": 23,
+        "count": 3,
+        "name": "Text"
+    }
+]

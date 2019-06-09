@@ -1,0 +1,15 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "CompanyCraftType",
+        "target": "CompanyCraftType"
+    },
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 5,
+        "count": 3,
+        "name": "CompanyCraftProcess"
+    }
+]

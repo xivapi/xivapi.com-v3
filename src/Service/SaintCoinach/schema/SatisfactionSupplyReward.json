@@ -1,0 +1,62 @@
+[
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 3,
+        "count": 2,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Reward{Currency}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Currency"
+            },
+            {
+                "offset": 1,
+                "name": "Quantity{Low}",
+                "type": "basic"
+            },
+            {
+                "offset": 2,
+                "name": "Quantity{Mid}",
+                "type": "basic"
+            },
+            {
+                "offset": 3,
+                "name": "Quantity{High}",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "Satisfaction{Low}"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "Satisfaction{Mid}"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "Satisfaction{High}"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "Gil{Low}"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "Gil{Mid}"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "Gil{High}"
+    }
+]

@@ -1,0 +1,405 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Singular"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Adjective"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Plural"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "PossessivePronoun"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "StartsWithVowel"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Pronoun"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Article"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "Description"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 11,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "Level{Item}",
+        "target": "ItemLevel"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "Rarity"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "FilterGroup"
+    },
+    {
+        "type": "link_complex",
+        "index": 15,
+        "name": "AdditionalData",
+        "field": "FilterGroup",
+        "sheets": [
+            {
+                "sheet": "Stain",
+                "sheet_array": null,
+                "project": null,
+                "value": 15
+            },
+            {
+                "sheet": "TreasureHuntRank",
+                "sheet_array": null,
+                "project": null,
+                "value": 18
+            },
+            {
+                "sheet": "GardeningSeed",
+                "sheet_array": null,
+                "project": null,
+                "value": 20
+            },
+            {
+                "sheet": "AetherialWheel",
+                "sheet_array": null,
+                "project": null,
+                "value": 25
+            },
+            {
+                "sheet": "CompanyAction",
+                "sheet_array": null,
+                "project": null,
+                "value": 26
+            },
+            {
+                "sheet": "TripleTriadCard",
+                "sheet_array": null,
+                "project": null,
+                "value": 27
+            },
+            {
+                "sheet": "AirshipExplorationPart",
+                "sheet_array": null,
+                "project": null,
+                "value": 28
+            },
+            {
+                "sheet": "SubmarinePart",
+                "sheet_array": null,
+                "project": null,
+                "value": 37
+            },
+            {
+                "sheet": null,
+                "sheet_array": [
+                    "HousingExterior",
+                    "HousingInterior",
+                    "HousingYardObject",
+                    "HousingFurniture",
+                    "HousingPreset",
+                    "HousingUnitedExterior"
+                ],
+                "project": null,
+                "value": 14
+            }
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 16,
+        "name": "ItemUICategory",
+        "target": "ItemUICategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 17,
+        "name": "ItemSearchCategory",
+        "target": "ItemSearchCategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 18,
+        "name": "EquipSlotCategory",
+        "target": "EquipSlotCategory"
+    },
+    {
+        "type": "basic",
+        "index": 20,
+        "name": "StackSize"
+    },
+    {
+        "type": "basic",
+        "index": 21,
+        "name": "IsUnique"
+    },
+    {
+        "type": "basic",
+        "index": 22,
+        "name": "IsUntradable"
+    },
+    {
+        "type": "basic",
+        "index": 23,
+        "name": "IsIndisposable"
+    },
+    {
+        "type": "basic",
+        "index": 25,
+        "name": "Price{Mid}"
+    },
+    {
+        "type": "basic",
+        "index": 26,
+        "name": "Price{Low}"
+    },
+    {
+        "type": "basic",
+        "index": 27,
+        "name": "CanBeHq"
+    },
+    {
+        "type": "basic",
+        "index": 28,
+        "name": "IsDyeable"
+    },
+    {
+        "type": "basic",
+        "index": 29,
+        "name": "IsCrestWorthy"
+    },
+    {
+        "type": "link_sheet",
+        "index": 30,
+        "name": "ItemAction",
+        "target": "ItemAction"
+    },
+    {
+        "type": "basic",
+        "index": 32,
+        "name": "Cooldown<s>"
+    },
+    {
+        "type": "link_sheet",
+        "index": 33,
+        "name": "ClassJob{Repair}",
+        "target": "ClassJob"
+    },
+    {
+        "type": "link_sheet",
+        "index": 34,
+        "name": "Item{Repair}",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 35,
+        "name": "Item{Glamour}",
+        "target": "Item"
+    },
+    {
+        "type": "link_sheet",
+        "index": 36,
+        "name": "Salvage",
+        "target": "Salvage"
+    },
+    {
+        "type": "basic",
+        "index": 37,
+        "name": "IsCollectable"
+    },
+    {
+        "type": "basic",
+        "index": 38,
+        "name": "AetherialReduce"
+    },
+    {
+        "type": "basic",
+        "index": 39,
+        "name": "Level{Equip}"
+    },
+    {
+        "type": "basic",
+        "index": 41,
+        "name": "EquipRestriction"
+    },
+    {
+        "type": "link_sheet",
+        "index": 42,
+        "name": "ClassJobCategory",
+        "target": "ClassJobCategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 43,
+        "name": "GrandCompany",
+        "target": "GrandCompany"
+    },
+    {
+        "type": "link_sheet",
+        "index": 44,
+        "name": "ItemSeries",
+        "target": "ItemSeries"
+    },
+    {
+        "type": "basic",
+        "index": 45,
+        "name": "BaseParamModifier"
+    },
+    {
+        "type": "basic",
+        "index": 46,
+        "name": "Model{Main}"
+    },
+    {
+        "type": "basic",
+        "index": 47,
+        "name": "Model{Sub}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 48,
+        "name": "ClassJob{Use}",
+        "target": "ClassJob"
+    },
+    {
+        "type": "basic",
+        "index": 50,
+        "name": "Damage{Phys}"
+    },
+    {
+        "type": "basic",
+        "index": 51,
+        "name": "Damage{Mag}"
+    },
+    {
+        "type": "basic",
+        "index": 52,
+        "name": "Delay<ms>"
+    },
+    {
+        "type": "basic",
+        "index": 54,
+        "name": "BlockRate"
+    },
+    {
+        "type": "basic",
+        "index": 55,
+        "name": "Block"
+    },
+    {
+        "type": "basic",
+        "index": 56,
+        "name": "Defense{Phys}"
+    },
+    {
+        "type": "basic",
+        "index": 57,
+        "name": "Defense{Mag}"
+    },
+    {
+        "type": "array_group",
+        "start": 58,
+        "finish": 63,
+        "count": 6,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "BaseParam",
+                "type": "link_sheet",
+                "index": null,
+                "target": "BaseParam"
+            },
+            {
+                "offset": 1,
+                "name": "BaseParamValue",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 70,
+        "name": "ItemSpecialBonus",
+        "target": "ItemSpecialBonus"
+    },
+    {
+        "type": "basic",
+        "index": 71,
+        "name": "ItemSpecialBonus{Param}"
+    },
+    {
+        "type": "array_group",
+        "start": 72,
+        "finish": 77,
+        "count": 6,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "BaseParam{Special}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "BaseParam"
+            },
+            {
+                "offset": 1,
+                "name": "BaseParamValue{Special}",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "basic",
+        "index": 84,
+        "name": "MaterializeType"
+    },
+    {
+        "type": "basic",
+        "index": 85,
+        "name": "MateriaSlotCount"
+    },
+    {
+        "type": "basic",
+        "index": 86,
+        "name": "IsAdvancedMeldingPermitted"
+    },
+    {
+        "type": "basic",
+        "index": 87,
+        "name": "IsPvP"
+    },
+    {
+        "type": "basic",
+        "index": 89,
+        "name": "IsGlamourous"
+    }
+]

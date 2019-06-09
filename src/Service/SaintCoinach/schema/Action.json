@@ -1,0 +1,230 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "ActionCategory",
+        "target": "ActionCategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "Animation{Start}",
+        "target": "ActionCastTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "VFX",
+        "target": "ActionCastVFX"
+    },
+    {
+        "type": "link_sheet",
+        "index": 8,
+        "name": "Animation{End}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 9,
+        "name": "ActionTimeline{Hit}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 11,
+        "name": "ClassJob",
+        "target": "ClassJob"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "ClassJobLevel"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "IsRoleAction"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "Range"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "CanTargetSelf"
+    },
+    {
+        "type": "basic",
+        "index": 17,
+        "name": "CanTargetParty"
+    },
+    {
+        "type": "basic",
+        "index": 18,
+        "name": "CanTargetFriendly"
+    },
+    {
+        "type": "basic",
+        "index": 19,
+        "name": "CanTargetHostile"
+    },
+    {
+        "type": "basic",
+        "index": 22,
+        "name": "TargetArea"
+    },
+    {
+        "type": "basic",
+        "index": 26,
+        "name": "CanTargetDead"
+    },
+    {
+        "type": "basic",
+        "index": 28,
+        "name": "CastType"
+    },
+    {
+        "type": "basic",
+        "index": 29,
+        "name": "EffectRange"
+    },
+    {
+        "type": "basic",
+        "index": 30,
+        "name": "XAxisModifier"
+    },
+    {
+        "type": "basic",
+        "index": 32,
+        "name": "Cost{Type}[1]"
+    },
+    {
+        "type": "basic",
+        "index": 33,
+        "name": "Cost{Value}[1]"
+    },
+    {
+        "type": "basic",
+        "index": 34,
+        "name": "Cost{Type}[2]"
+    },
+    {
+        "type": "link_complex",
+        "index": 35,
+        "name": "Cost{Value}[2]",
+        "field": "Cost{Type}[2]",
+        "sheets": [
+            {
+                "sheet": "Status",
+                "sheet_array": null,
+                "project": null,
+                "value": 32
+            },
+            {
+                "sheet": "Status",
+                "sheet_array": null,
+                "project": null,
+                "value": 35
+            },
+            {
+                "sheet": "Status",
+                "sheet_array": null,
+                "project": null,
+                "value": 46
+            }
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 36,
+        "name": "Action{Combo}",
+        "target": "Action"
+    },
+    {
+        "type": "basic",
+        "index": 37,
+        "name": "PreservesCombo"
+    },
+    {
+        "type": "basic",
+        "index": 38,
+        "name": "Cast<100ms>"
+    },
+    {
+        "type": "basic",
+        "index": 39,
+        "name": "Recast<100ms>"
+    },
+    {
+        "type": "basic",
+        "index": 40,
+        "name": "CooldownGroup"
+    },
+    {
+        "type": "link_sheet",
+        "index": 41,
+        "name": "AttackType",
+        "target": "AttackType"
+    },
+    {
+        "type": "basic",
+        "index": 42,
+        "name": "Aspect"
+    },
+    {
+        "type": "link_sheet",
+        "index": 43,
+        "name": "ActionProcStatus",
+        "target": "ActionProcStatus"
+    },
+    {
+        "type": "link_sheet",
+        "index": 44,
+        "name": "Status{GainSelf}",
+        "target": "Status"
+    },
+    {
+        "type": "array_generic",
+        "start": 45,
+        "name": "UnlockLink"
+    },
+    {
+        "type": "link_sheet",
+        "index": 46,
+        "name": "ClassJobCategory",
+        "target": "ClassJobCategory"
+    },
+    {
+        "type": "basic",
+        "index": 49,
+        "name": "AffectsPosition"
+    },
+    {
+        "type": "link_sheet",
+        "index": 50,
+        "name": "Omen",
+        "target": "Omen"
+    },
+    {
+        "type": "basic",
+        "index": 51,
+        "name": "IsPvP"
+    },
+    {
+        "type": "basic",
+        "index": 63,
+        "name": "IsPlayerAction"
+    }
+]

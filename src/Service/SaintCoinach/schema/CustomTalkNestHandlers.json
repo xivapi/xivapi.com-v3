@@ -1,0 +1,13 @@
+[
+    {
+        "type": "multiref",
+        "index": 1,
+        "name": "NestHandler",
+        "targets": [
+            "GilShop",
+            "SpecialShop",
+            "DisposalShop",
+            "ContentEntry"
+        ]
+    }
+]

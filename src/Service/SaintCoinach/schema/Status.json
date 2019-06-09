@@ -1,0 +1,84 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Description"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "Icon"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "MaxStacks"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "Category"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "HitEffect",
+        "target": "StatusHitEffect"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "VFX",
+        "target": "StatusLoopVFX"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "LockMovement"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "LockActions"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "LockControl"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "Transfiguration"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "CanDispel"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "InflictedByActor"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "IsPermanent"
+    },
+    {
+        "type": "basic",
+        "index": 22,
+        "name": "IsFcBuff"
+    },
+    {
+        "type": "basic",
+        "index": 23,
+        "name": "Invisibility"
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Type"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "TimeLimit"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "MapIcon"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Name"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "TextData{Start}",
+        "target": "PublicContentTextData"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "TextData{End}",
+        "target": "PublicContentTextData"
+    },
+    {
+        "type": "link_sheet",
+        "index": 9,
+        "name": "ContentFinderCondition",
+        "target": "ContentFinderCondition"
+    },
+    {
+        "type": "link_complex",
+        "index": 10,
+        "name": "AdditionalData",
+        "field": "Type",
+        "sheets": [
+            {
+                "sheet": "Eureka",
+                "sheet_array": null,
+                "project": null,
+                "value": 3
+            },
+            {
+                "sheet": "GFateClimbing2Content",
+                "sheet_array": null,
+                "project": null,
+                "value": 5
+            }
+        ]
+    }
+]

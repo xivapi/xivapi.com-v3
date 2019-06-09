@@ -282,12 +282,43 @@
         {
             "type": "basic",
             "index": 32,
-            "name": "Cost{Type}"
+            "name": "Cost{Type}[1]"
         },
         {
             "type": "basic",
             "index": 33,
-            "name": "Cost"
+            "name": "Cost{Value}[1]"
+        },
+        {
+            "type": "basic",
+            "index": 34,
+            "name": "Cost{Type}[2]"
+        },
+        {
+            "type": "link_complex",
+            "index": 35,
+            "name": "Cost{Value}[2]",
+            "field": "Cost{Type}[2]",
+            "sheets": [
+                {
+                    "sheet": "Status",
+                    "sheet_array": null,
+                    "project": null,
+                    "value": 32
+                },
+                {
+                    "sheet": "Status",
+                    "sheet_array": null,
+                    "project": null,
+                    "value": 35
+                },
+                {
+                    "sheet": "Status",
+                    "sheet_array": null,
+                    "project": null,
+                    "value": 46
+                }
+            ]
         },
         {
             "type": "link_sheet",
@@ -3928,6 +3959,37 @@
             "name": "Name"
         }
     ],
+    "CreditList": [
+        {
+            "type": "basic",
+            "index": 1,
+            "name": "Scale"
+        },
+        {
+            "type": "icon",
+            "index": 2,
+            "name": "Icon"
+        },
+        {
+            "type": "link_sheet",
+            "index": 3,
+            "name": "Font",
+            "target": "CreditFont"
+        },
+        {
+            "type": "link_sheet",
+            "index": 6,
+            "name": "Cast",
+            "target": "CreditListText"
+        }
+    ],
+    "CreditListText": [
+        {
+            "type": "basic",
+            "index": 1,
+            "name": "Name"
+        }
+    ],
     "Currency": [
         {
             "type": "link_sheet",
@@ -4638,6 +4700,17 @@
             "name": "ENpcData"
         },
         {
+            "type": "basic",
+            "index": 35,
+            "name": "Scale"
+        },
+        {
+            "type": "link_sheet",
+            "index": 36,
+            "name": "ModelChara",
+            "target": "ModelChara"
+        },
+        {
             "type": "link_sheet",
             "index": 37,
             "name": "Race",
@@ -4981,12 +5054,6 @@
             "type": "basic",
             "index": 9,
             "name": "Title"
-        },
-        {
-            "type": "link_sheet",
-            "index": 10,
-            "name": "Map",
-            "target": "Map"
         }
     ],
     "EObj": [
@@ -8106,6 +8173,11 @@
     ],
     "ItemFood": [
         {
+            "type": "basic",
+            "index": 1,
+            "name": "EXPBonus%"
+        },
+        {
             "type": "array_group",
             "start": 2,
             "finish": 4,
@@ -9890,6 +9962,26 @@
             "index": 2,
             "name": "VFXWalking",
             "target": "VFX"
+        }
+    ],
+    "NotebookDivision": [
+        {
+            "type": "basic",
+            "index": 1,
+            "name": "Name"
+        },
+        {
+            "type": "link_sheet",
+            "index": 2,
+            "name": "NotebookDivisionCategory",
+            "target": "NotebookDivisionCategory"
+        }
+    ],
+    "NotebookDivisionCategory": [
+        {
+            "type": "basic",
+            "index": 1,
+            "name": "Name"
         }
     ],
     "NpcEquip": [

@@ -1,0 +1,12 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "GatheringItemLevel"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Stars"
+    }
+]

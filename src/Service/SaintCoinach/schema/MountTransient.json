@@ -1,0 +1,17 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Description"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Description{Enhanced}"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Tooltip"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "JA"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "EN"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "DE"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "FR"
+    }
+]

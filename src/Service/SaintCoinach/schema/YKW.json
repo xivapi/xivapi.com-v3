@@ -1,0 +1,15 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Item",
+        "target": "Item"
+    },
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 5,
+        "count": 3,
+        "name": "Location"
+    }
+]

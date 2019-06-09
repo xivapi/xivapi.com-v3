@@ -1,0 +1,15 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "AssignmentTalk",
+        "target": "GuildleveAssignmentTalk"
+    },
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 4,
+        "count": 2,
+        "name": "Quest"
+    }
+]

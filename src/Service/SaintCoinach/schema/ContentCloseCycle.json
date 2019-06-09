@@ -1,0 +1,12 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Unixtime"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Time{Seconds}"
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "X"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Y"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "PlaceName{Subtext}",
+        "target": "PlaceName"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "SubtextOrientation"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "MapMarkerRegion",
+        "target": "MapMarkerRegion"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Type"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Data{Type}"
+    },
+    {
+        "type": "link_complex",
+        "index": 9,
+        "name": "Data{Key}",
+        "field": "Data{Type}",
+        "sheets": [
+            {
+                "sheet": "Map",
+                "sheet_array": null,
+                "project": null,
+                "value": 1
+            },
+            {
+                "sheet": "Map",
+                "sheet_array": null,
+                "project": null,
+                "value": 2
+            },
+            {
+                "sheet": "Aetheryte",
+                "sheet_array": null,
+                "project": null,
+                "value": 3
+            },
+            {
+                "sheet": "PlaceName",
+                "sheet_array": null,
+                "project": null,
+                "value": 4
+            }
+        ]
+    }
+]

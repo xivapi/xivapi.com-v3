@@ -1,0 +1,26 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Race",
+        "target": "Race"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Tribe",
+        "target": "Tribe"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Gender"
+    },
+    {
+        "type": "array_basic",
+        "start": 3292,
+        "finish": 3333,
+        "count": 42,
+        "name": "FacialFeatureIcon"
+    }
+]

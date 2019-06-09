@@ -1,0 +1,158 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 3,
+        "count": 2,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Item{Receive}",
+                "type": "array",
+                "start": 0,
+                "finish": 59,
+                "count": 60,
+                "link_sheet": "Item"
+            },
+            {
+                "offset": 1,
+                "name": "Count{Receive}",
+                "type": "array",
+                "start": 60,
+                "finish": 119,
+                "count": 60
+            },
+            {
+                "offset": 2,
+                "name": "SpecialShopItemCategory",
+                "type": "array",
+                "start": 120,
+                "finish": 179,
+                "count": 60,
+                "link_sheet": "SpecialShopItemCategory"
+            },
+            {
+                "offset": 3,
+                "name": "HQ{Receive}",
+                "type": "array",
+                "start": 180,
+                "finish": 239,
+                "count": 60
+            }
+        ]
+    },
+    {
+        "type": "array_group",
+        "start": 482,
+        "finish": 484,
+        "count": 3,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Item{Cost}",
+                "type": "array",
+                "start": 0,
+                "finish": 59,
+                "count": 60,
+                "link_sheet": "Item"
+            },
+            {
+                "offset": 1,
+                "name": "Count{Cost}",
+                "type": "array",
+                "start": 60,
+                "finish": 119,
+                "count": 60
+            },
+            {
+                "offset": 2,
+                "name": "HQ{Cost}",
+                "type": "array",
+                "start": 120,
+                "finish": 179,
+                "count": 60
+            },
+            {
+                "offset": 3,
+                "name": "CollectabilityRating{Cost}",
+                "type": "array",
+                "start": 180,
+                "finish": 239,
+                "count": 60
+            }
+        ]
+    },
+    {
+        "type": "array_basic",
+        "start": 1202,
+        "finish": 1261,
+        "count": 60,
+        "name": "Quest{Item}"
+    },
+    {
+        "type": "array_basic",
+        "start": 1262,
+        "finish": 1321,
+        "count": 60,
+        "name": "Unknown"
+    },
+    {
+        "type": "array_basic",
+        "start": 1322,
+        "finish": 1381,
+        "count": 60,
+        "name": "AchievementUnlock"
+    },
+    {
+        "type": "array_group",
+        "start": 1382,
+        "finish": 1383,
+        "count": 2,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Unknown",
+                "type": "array",
+                "start": 0,
+                "finish": 59,
+                "count": 60
+            }
+        ]
+    },
+    {
+        "type": "array_basic",
+        "start": 1802,
+        "finish": 1861,
+        "count": 60,
+        "name": "PatchNumber"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1863,
+        "name": "Quest{Unlock}",
+        "target": "Quest"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1864,
+        "name": "Quest{Shop}",
+        "target": "Quest"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1865,
+        "name": "NotCompleteText",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1866,
+        "name": "CompleteText",
+        "target": "DefaultTalk"
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "array_group",
+        "start": 5,
+        "finish": 14,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Shop",
+                "type": "multiref",
+                "index": 0,
+                "targets": [
+                    "SpecialShop",
+                    "GilShop"
+                ]
+            }
+        ]
+    }
+]

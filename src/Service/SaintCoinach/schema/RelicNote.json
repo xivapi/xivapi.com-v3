@@ -1,0 +1,64 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "EventItem",
+        "target": "EventItem"
+    },
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 11,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "MonsterNoteTarget{Common}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "MonsterNoteTarget"
+            },
+            {
+                "offset": 1,
+                "name": "MonsterCount",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "array_basic",
+        "start": 22,
+        "finish": 24,
+        "count": 3,
+        "name": "MonsterNoteTarget{NM}"
+    },
+    {
+        "type": "array_group",
+        "start": 26,
+        "finish": 28,
+        "count": 3,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Fate",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Fate"
+            },
+            {
+                "offset": 1,
+                "name": "PlaceName{Fate}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "PlaceName"
+            }
+        ]
+    },
+    {
+        "type": "array_basic",
+        "start": 32,
+        "finish": 34,
+        "count": 3,
+        "name": "Leve"
+    }
+]

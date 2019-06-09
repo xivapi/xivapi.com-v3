@@ -1,0 +1,25 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Item",
+        "target": "Item"
+    },
+    {
+        "type": "array_basic",
+        "start": 4,
+        "finish": 6,
+        "count": 3,
+        "name": "Row{Required}"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "State{Required}"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "Patch"
+    }
+]

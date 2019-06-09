@@ -1,0 +1,72 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "MainHand"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "OffHand"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Head"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Body"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "Gloves"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Waist"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Legs"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Feet"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "Ears"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "Neck"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "Wrists"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "FingerL"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "FingerR"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "SoulCrystal"
+    }
+]

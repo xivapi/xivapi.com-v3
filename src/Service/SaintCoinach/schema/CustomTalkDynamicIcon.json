@@ -1,0 +1,12 @@
+[
+    {
+        "type": "icon",
+        "index": 1,
+        "name": "SmallIcon"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "LargeIcon"
+    }
+]

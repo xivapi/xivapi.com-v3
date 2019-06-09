@@ -1,0 +1,9 @@
+[
+    {
+        "type": "array_basic",
+        "start": 2,
+        "finish": 101,
+        "count": 100,
+        "name": "GatheringItem"
+    }
+]

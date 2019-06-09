@@ -1,0 +1,39 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "BuddyLevel"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "IsActive"
+    },
+    {
+        "type": "multiref",
+        "index": 3,
+        "name": "Defender",
+        "targets": [
+            "Trait",
+            "Action"
+        ]
+    },
+    {
+        "type": "multiref",
+        "index": 4,
+        "name": "Attacker",
+        "targets": [
+            "Trait",
+            "Action"
+        ]
+    },
+    {
+        "type": "multiref",
+        "index": 5,
+        "name": "Healer",
+        "targets": [
+            "Trait",
+            "Action"
+        ]
+    }
+]

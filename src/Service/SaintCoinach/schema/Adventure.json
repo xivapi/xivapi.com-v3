@@ -1,0 +1,65 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Level",
+        "target": "Level"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "Emote",
+        "target": "Emote"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "MinTime"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "MaxTime"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "PlaceName",
+        "target": "PlaceName"
+    },
+    {
+        "type": "icon",
+        "index": 8,
+        "name": "Icon{List}"
+    },
+    {
+        "type": "icon",
+        "index": 9,
+        "name": "Icon{Discovered}"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "Impression"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "Description"
+    },
+    {
+        "type": "icon",
+        "index": 13,
+        "name": "Icon{Undiscovered}"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "IsInitial"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "RequiredItem[1]",
+        "target": "EventItem"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "LeveLevel"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "RequiredItem[2]",
+        "target": "EventItem"
+    }
+]

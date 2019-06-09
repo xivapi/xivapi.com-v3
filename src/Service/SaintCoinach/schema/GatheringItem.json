@@ -1,0 +1,22 @@
+[
+    {
+        "type": "multiref",
+        "index": 1,
+        "name": "Item",
+        "targets": [
+            "Item",
+            "EventItem"
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "GatheringItemLevel",
+        "target": "GatheringItemLevelConvertTable"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "IsHidden"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Item{1}",
+        "target": "EventItem"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "Item{2}",
+        "target": "EventItem"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "Objective{1}",
+        "target": "SkyIsland2MissionDetail"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "RequiredAmount{1}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 10,
+        "name": "Objective2",
+        "target": "SkyIsland2MissionDetail"
+    },
+    {
+        "type": "basic",
+        "index": 12,
+        "name": "RequiredAmount{2}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 15,
+        "name": "Objective3",
+        "target": "SkyIsland2MissionDetail"
+    },
+    {
+        "type": "icon",
+        "index": 21,
+        "name": "Image"
+    }
+]

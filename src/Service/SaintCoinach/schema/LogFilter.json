@@ -1,0 +1,18 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "LogKind",
+        "target": "LogKind"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Example"
+    }
+]

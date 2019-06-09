@@ -1,0 +1,50 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 11,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Item",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Item"
+            }
+        ]
+    },
+    {
+        "type": "array_group",
+        "start": 12,
+        "finish": 21,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Cost",
+                "type": "basic"
+            }
+        ]
+    },
+    {
+        "type": "array_group",
+        "start": 22,
+        "finish": 31,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "FCRank{Required}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "FCRank"
+            }
+        ]
+    }
+]

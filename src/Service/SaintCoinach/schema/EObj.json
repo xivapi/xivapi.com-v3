@@ -1,0 +1,13 @@
+[
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "Data"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "SgbPath",
+        "target": "ExportedSG"
+    }
+]

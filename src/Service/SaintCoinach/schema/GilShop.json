@@ -1,0 +1,31 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 6,
+        "count": 4,
+        "name": "Quest{Required}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "AcceptTalk",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 8,
+        "name": "FailTalk",
+        "target": "DefaultTalk"
+    }
+]

@@ -1,0 +1,476 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Id"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "Expansion",
+        "target": "ExVersion"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "ClassJobCategory[0]",
+        "target": "ClassJobCategory"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "ClassJobLevel[0]"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "QuestLevelOffset"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Level{Max}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 8,
+        "name": "ClassJobCategory[1]",
+        "target": "ClassJobCategory"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "ClassJobLevel[1]"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "PreviousQuestJoin"
+    },
+    {
+        "type": "link_sheet",
+        "index": 11,
+        "name": "PreviousQuest[0]",
+        "target": "Quest"
+    },
+    {
+        "type": "link_sheet",
+        "index": 13,
+        "name": "PreviousQuest[1]",
+        "target": "Quest"
+    },
+    {
+        "type": "link_sheet",
+        "index": 14,
+        "name": "PreviousQuest[2]",
+        "target": "Quest"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "QuestLockJoin"
+    },
+    {
+        "type": "array_basic",
+        "start": 16,
+        "finish": 17,
+        "count": 2,
+        "name": "QuestLock"
+    },
+    {
+        "type": "link_sheet",
+        "index": 21,
+        "name": "ClassJob{Unlock}",
+        "target": "ClassJob"
+    },
+    {
+        "type": "link_sheet",
+        "index": 22,
+        "name": "GrandCompany",
+        "target": "GrandCompany"
+    },
+    {
+        "type": "link_sheet",
+        "index": 23,
+        "name": "GrandCompanyRank",
+        "target": "GrandCompanyRank"
+    },
+    {
+        "type": "basic",
+        "index": 24,
+        "name": "InstanceContentJoin"
+    },
+    {
+        "type": "array_basic",
+        "start": 25,
+        "finish": 27,
+        "count": 3,
+        "name": "InstanceContent"
+    },
+    {
+        "type": "link_sheet",
+        "index": 28,
+        "name": "Festival",
+        "target": "Festival"
+    },
+    {
+        "type": "basic",
+        "index": 31,
+        "name": "Bell{Start}"
+    },
+    {
+        "type": "basic",
+        "index": 32,
+        "name": "Bell{End}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 33,
+        "name": "BeastTribe",
+        "target": "BeastTribe"
+    },
+    {
+        "type": "link_sheet",
+        "index": 34,
+        "name": "BeastReputationRank",
+        "target": "BeastReputationRank"
+    },
+    {
+        "type": "link_sheet",
+        "index": 38,
+        "name": "Mount{Required}",
+        "target": "Mount"
+    },
+    {
+        "type": "basic",
+        "index": 39,
+        "name": "IsHouseRequired"
+    },
+    {
+        "type": "link_sheet",
+        "index": 40,
+        "name": "DeliveryQuest",
+        "target": "DeliveryQuest"
+    },
+    {
+        "type": "multiref",
+        "index": 41,
+        "name": "Issuer{Start}",
+        "targets": [
+            "EObjName",
+            "ENpcResident"
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 42,
+        "name": "Behavior",
+        "target": "Behavior"
+    },
+    {
+        "type": "multiref",
+        "index": 43,
+        "name": "Target{End}",
+        "targets": [
+            "EObjName",
+            "ENpcResident"
+        ]
+    },
+    {
+        "type": "basic",
+        "index": 44,
+        "name": "IsRepeatable"
+    },
+    {
+        "type": "basic",
+        "index": 45,
+        "name": "RepeatIntervalType"
+    },
+    {
+        "type": "link_sheet",
+        "index": 46,
+        "name": "QuestRepeatFlag",
+        "target": "QuestRepeatFlag"
+    },
+    {
+        "type": "basic",
+        "index": 47,
+        "name": "UnlocksSystemContent"
+    },
+    {
+        "type": "basic",
+        "index": 49,
+        "name": "Type"
+    },
+    {
+        "type": "link_sheet",
+        "index": 50,
+        "name": "QuestClassJobSupply",
+        "target": "QuestClassJobSupply"
+    },
+    {
+        "type": "array_basic",
+        "start": 51,
+        "finish": 100,
+        "count": 50,
+        "name": "Script{Instruction}"
+    },
+    {
+        "type": "array_basic",
+        "start": 101,
+        "finish": 150,
+        "count": 50,
+        "name": "Script{Arg}"
+    },
+    {
+        "type": "array_basic",
+        "start": 151,
+        "finish": 214,
+        "count": 64,
+        "name": "ActorSpawnSeq"
+    },
+    {
+        "type": "array_basic",
+        "start": 215,
+        "finish": 278,
+        "count": 64,
+        "name": "ActorDespawnSeq"
+    },
+    {
+        "type": "array_basic",
+        "start": 279,
+        "finish": 342,
+        "count": 64,
+        "name": "ActorSpawn"
+    },
+    {
+        "type": "array_basic",
+        "start": 343,
+        "finish": 374,
+        "count": 32,
+        "name": "QuestUInt8A"
+    },
+    {
+        "type": "array_basic",
+        "start": 375,
+        "finish": 406,
+        "count": 32,
+        "name": "QuestUInt8B"
+    },
+    {
+        "type": "array_basic",
+        "start": 1175,
+        "finish": 1198,
+        "count": 24,
+        "name": "ToDoCompleteSeq"
+    },
+    {
+        "type": "array_basic",
+        "start": 1199,
+        "finish": 1222,
+        "count": 24,
+        "name": "ToDoQty"
+    },
+    {
+        "type": "array_basic",
+        "start": 1223,
+        "finish": 1246,
+        "count": 24,
+        "name": "ToDoMainLocation"
+    },
+    {
+        "type": "array_repeat_repeat",
+        "start": 1247,
+        "finish": 1253,
+        "count": 7,
+        "repeats": {
+            "type": "array_basic",
+            "start": 0,
+            "finish": 23,
+            "count": 24,
+            "name": "ToDoChildLocation"
+        }
+    },
+    {
+        "type": "link_sheet",
+        "index": 1439,
+        "name": "ClassJob{Required}",
+        "target": "ClassJob"
+    },
+    {
+        "type": "basic",
+        "index": 1441,
+        "name": "ExpFactor"
+    },
+    {
+        "type": "basic",
+        "index": 1442,
+        "name": "GilReward"
+    },
+    {
+        "type": "basic",
+        "index": 1444,
+        "name": "GCSeals"
+    },
+    {
+        "type": "array_basic",
+        "start": 1445,
+        "finish": 1447,
+        "count": 3,
+        "name": "Item{Catalyst}"
+    },
+    {
+        "type": "array_basic",
+        "start": 1448,
+        "finish": 1450,
+        "count": 3,
+        "name": "ItemCount{Catalyst}"
+    },
+    {
+        "type": "basic",
+        "index": 1451,
+        "name": "ItemRewardType"
+    },
+    {
+        "type": "array_basic",
+        "start": 1452,
+        "finish": 1457,
+        "count": 6,
+        "name": "Item{Reward}[0]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1459,
+        "finish": 1464,
+        "count": 6,
+        "name": "ItemCount{Reward}[0]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1466,
+        "finish": 1471,
+        "count": 6,
+        "name": "Stain{Reward}[0]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1473,
+        "finish": 1477,
+        "count": 5,
+        "name": "Item{Reward}[1]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1478,
+        "finish": 1482,
+        "count": 5,
+        "name": "ItemCount{Reward}[1]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1483,
+        "finish": 1487,
+        "count": 5,
+        "name": "IsHQ{Reward}[1]"
+    },
+    {
+        "type": "array_basic",
+        "start": 1488,
+        "finish": 1492,
+        "count": 5,
+        "name": "Stain{Reward}[1]"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1493,
+        "name": "Emote{Reward}",
+        "target": "Emote"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1494,
+        "name": "Action{Reward}",
+        "target": "Action"
+    },
+    {
+        "type": "array_basic",
+        "start": 1495,
+        "finish": 1496,
+        "count": 2,
+        "name": "GeneralAction{Reward}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1498,
+        "name": "Other{Reward}",
+        "target": "QuestRewardOther"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1501,
+        "name": "InstanceContent{Unlock}",
+        "target": "InstanceContent"
+    },
+    {
+        "type": "link_complex",
+        "index": 1503,
+        "name": "Tomestone{Reward}",
+        "field": null,
+        "sheets": [
+            {
+                "sheet": "TomestonesItem",
+                "sheet_array": null,
+                "project": "Item",
+                "value": null
+            }
+        ]
+    },
+    {
+        "type": "basic",
+        "index": 1504,
+        "name": "TomestoneCount{Reward}"
+    },
+    {
+        "type": "basic",
+        "index": 1505,
+        "name": "ReputationReward"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1506,
+        "name": "PlaceName",
+        "target": "PlaceName"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1507,
+        "name": "JournalGenre",
+        "target": "JournalGenre"
+    },
+    {
+        "type": "icon",
+        "index": 1509,
+        "name": "Icon"
+    },
+    {
+        "type": "icon",
+        "index": 1510,
+        "name": "Icon{Special}"
+    },
+    {
+        "type": "link_sheet",
+        "index": 1513,
+        "name": "EventIconType",
+        "target": "EventIconType"
+    },
+    {
+        "type": "basic",
+        "index": 1515,
+        "name": "SortKey"
+    }
+]

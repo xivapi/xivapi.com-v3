@@ -1,0 +1,27 @@
+[
+    {
+        "type": "array_group",
+        "start": 1,
+        "finish": 12,
+        "count": 12,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "SupplyItem",
+                "type": "link_sheet",
+                "index": null,
+                "target": "CompanyCraftSupplyItem"
+            },
+            {
+                "offset": 1,
+                "name": "SetQuantity",
+                "type": "basic"
+            },
+            {
+                "offset": 2,
+                "name": "SetsRequired",
+                "type": "basic"
+            }
+        ]
+    }
+]

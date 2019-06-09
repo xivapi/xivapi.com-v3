@@ -1,0 +1,24 @@
+[
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "RequiredLevel"
+    },
+    {
+        "type": "icon",
+        "index": 4,
+        "name": "Icon"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Name"
+    },
+    {
+        "type": "array_basic",
+        "start": 7,
+        "finish": 30,
+        "count": 24,
+        "name": "Cutscene"
+    }
+]

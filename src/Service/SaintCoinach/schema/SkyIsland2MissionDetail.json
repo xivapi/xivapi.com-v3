@@ -1,0 +1,25 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Type",
+        "target": "SkyIsland2MissionType"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "Range",
+        "target": "SkyIsland2RangeType"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "EObj",
+        "target": "EObjName"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Objective"
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "ModelKey"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "Animation{Start}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "Animation{End}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 6,
+        "name": "Animation{Idle}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "Animation{Play01}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 8,
+        "name": "Animation{Play02}",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 9,
+        "name": "StopAnimation",
+        "target": "ActionTimeline"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "Instrument"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "Transient",
+        "target": "PerformTransient"
+    }
+]

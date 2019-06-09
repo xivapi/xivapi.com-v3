@@ -1,0 +1,29 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Description"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "Action",
+        "target": "Action"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "Pet",
+        "target": "Pet"
+    }
+]

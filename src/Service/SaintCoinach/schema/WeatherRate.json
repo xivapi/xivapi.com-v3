@@ -1,0 +1,22 @@
+[
+    {
+        "type": "array_group",
+        "start": 1,
+        "finish": 8,
+        "count": 8,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "Weather",
+                "type": "link_sheet",
+                "index": null,
+                "target": "Weather"
+            },
+            {
+                "offset": 1,
+                "name": "Rate",
+                "type": "basic"
+            }
+        ]
+    }
+]

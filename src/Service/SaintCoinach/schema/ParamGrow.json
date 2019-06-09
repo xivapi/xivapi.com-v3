@@ -1,0 +1,42 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "ExpToNext"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "AdditionalActions"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "MpModifier"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "BaseSpeed"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "LevelModifier"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "QuestExpModifier"
+    },
+    {
+        "type": "basic",
+        "index": 9,
+        "name": "HpModifier"
+    },
+    {
+        "type": "basic",
+        "index": 10,
+        "name": "HuntingLogExpReward"
+    }
+]

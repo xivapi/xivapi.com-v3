@@ -1,0 +1,24 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Condition",
+        "target": "GatheringCondition"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "ConditionValue"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "BonusType",
+        "target": "GatheringPointBonusType"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "BonusValue"
+    }
+]

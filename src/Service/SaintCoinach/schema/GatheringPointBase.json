@@ -1,0 +1,25 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "GatheringType",
+        "target": "GatheringType"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "GatheringLevel"
+    },
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 10,
+        "count": 8,
+        "name": "Item"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "IsLimited"
+    }
+]

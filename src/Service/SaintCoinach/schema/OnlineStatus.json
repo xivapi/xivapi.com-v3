@@ -1,0 +1,17 @@
+[
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Priority"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 5,
+        "name": "Icon"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "EurekaMagiciteItemType",
+        "target": "EurekaMagiciteItemType"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "ClassJobCategory",
+        "target": "ClassJobCategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "Item",
+        "target": "Item"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "type": "array_basic",
+        "start": 3,
+        "finish": 12,
+        "count": 10,
+        "name": "Images"
+    },
+    {
+        "type": "link_sheet",
+        "index": 13,
+        "name": "Category",
+        "target": "HowToCategory"
+    }
+]

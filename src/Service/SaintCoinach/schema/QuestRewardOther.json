@@ -1,0 +1,12 @@
+[
+    {
+        "type": "icon",
+        "index": 1,
+        "name": "Icon"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Name"
+    }
+]

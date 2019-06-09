@@ -1,0 +1,42 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Hyur"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Elezen"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Lalafell"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Miqo'te"
+    },
+    {
+        "type": "basic",
+        "index": 5,
+        "name": "Roegadyn"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "Au Ra"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "Male"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Female"
+    }
+]

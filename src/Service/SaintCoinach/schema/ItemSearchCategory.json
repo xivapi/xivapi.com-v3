@@ -1,0 +1,28 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Category"
+    },
+    {
+        "type": "basic",
+        "index": 4,
+        "name": "Order"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "ClassJob",
+        "target": "ClassJob"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Name{Short}"
+    },
+    {
+        "type": "basic",
+        "index": 6,
+        "name": "RequiredLevel"
+    },
+    {
+        "type": "basic",
+        "index": 7,
+        "name": "RequiredFuel"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "Duration<min>"
+    },
+    {
+        "type": "basic",
+        "index": 11,
+        "name": "RequiredSurveillance"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "ExpReward"
+    }
+]

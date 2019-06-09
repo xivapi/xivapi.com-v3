@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Race",
+        "target": "Race"
+    },
+    {
+        "type": "link_sheet",
+        "index": 2,
+        "name": "ClassJob",
+        "target": "ClassJob"
+    }
+]

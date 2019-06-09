@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 1,
+        "finish": 32,
+        "count": 32,
+        "name": "Month"
+    },
+    {
+        "type": "array_basic",
+        "start": 33,
+        "finish": 64,
+        "count": 32,
+        "name": "Day"
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "array_basic",
+        "start": 2,
+        "finish": 8,
+        "count": 7,
+        "name": "ActionTimeline"
+    },
+    {
+        "type": "link_sheet",
+        "index": 12,
+        "name": "EmoteCategory",
+        "target": "EmoteCategory"
+    },
+    {
+        "type": "link_sheet",
+        "index": 13,
+        "name": "EmoteMode",
+        "target": "EmoteMode"
+    },
+    {
+        "type": "basic",
+        "index": 16,
+        "name": "HasCancelEmote"
+    },
+    {
+        "type": "basic",
+        "index": 17,
+        "name": "DrawsWeapon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 19,
+        "name": "TextCommand",
+        "target": "TextCommand"
+    },
+    {
+        "type": "icon",
+        "index": 20,
+        "name": "Icon"
+    },
+    {
+        "type": "link_sheet",
+        "index": 21,
+        "name": "LogMessage{Targeted}",
+        "target": "LogMessage"
+    },
+    {
+        "type": "link_sheet",
+        "index": 22,
+        "name": "LogMessage{Untargeted}",
+        "target": "LogMessage"
+    },
+    {
+        "type": "basic",
+        "index": 23,
+        "name": "UnlockLink"
+    }
+]

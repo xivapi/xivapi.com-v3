@@ -1,0 +1,15 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Race",
+        "target": "HousingEmploymentNpcRace"
+    },
+    {
+        "type": "array_basic",
+        "start": 2,
+        "finish": 3,
+        "count": 2,
+        "name": "ENpcBase"
+    }
+]

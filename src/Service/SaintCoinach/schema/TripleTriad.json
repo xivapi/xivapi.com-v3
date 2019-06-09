@@ -1,0 +1,92 @@
+[
+    {
+        "type": "array_basic",
+        "start": 1,
+        "finish": 5,
+        "count": 5,
+        "name": "TripleTriadCard{Fixed}"
+    },
+    {
+        "type": "array_basic",
+        "start": 6,
+        "finish": 10,
+        "count": 5,
+        "name": "TripleTriadCard{Variable}"
+    },
+    {
+        "type": "array_basic",
+        "start": 11,
+        "finish": 12,
+        "count": 2,
+        "name": "TripleTriadRule"
+    },
+    {
+        "type": "basic",
+        "index": 13,
+        "name": "UsesRegionalRules"
+    },
+    {
+        "type": "basic",
+        "index": 14,
+        "name": "Fee"
+    },
+    {
+        "type": "basic",
+        "index": 15,
+        "name": "PreviousQuestJoin"
+    },
+    {
+        "type": "array_basic",
+        "start": 16,
+        "finish": 18,
+        "count": 3,
+        "name": "PreviousQuest"
+    },
+    {
+        "type": "basic",
+        "index": 19,
+        "name": "StartTime"
+    },
+    {
+        "type": "basic",
+        "index": 20,
+        "name": "EndTime"
+    },
+    {
+        "type": "link_sheet",
+        "index": 21,
+        "name": "DefaultTalk{Challenge}",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 22,
+        "name": "DefaultTalk{Unavailable}",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 23,
+        "name": "DefaultTalk{NPCWin}",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 24,
+        "name": "DefaultTalk{Draw}",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "link_sheet",
+        "index": 25,
+        "name": "DefaultTalk{PCWin}",
+        "target": "DefaultTalk"
+    },
+    {
+        "type": "array_basic",
+        "start": 27,
+        "finish": 30,
+        "count": 4,
+        "name": "Item{PossibleReward}"
+    }
+]

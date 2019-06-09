@@ -1,0 +1,17 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "icon",
+        "index": 3,
+        "name": "Icon{DutyFinder}"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "BNpcName",
+        "target": "BNpcName"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    },
+    {
+        "type": "array_group",
+        "start": 4,
+        "finish": 6,
+        "count": 3,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "PlaceName{Zone}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "PlaceName"
+            },
+            {
+                "offset": 1,
+                "name": "PlaceName{Location}",
+                "type": "link_sheet",
+                "index": null,
+                "target": "PlaceName"
+            }
+        ]
+    }
+]

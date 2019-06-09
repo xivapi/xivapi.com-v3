@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 2,
+        "finish": 17,
+        "count": 16,
+        "name": "ItemAccepted"
+    },
+    {
+        "type": "array_basic",
+        "start": 18,
+        "finish": 33,
+        "count": 16,
+        "name": "AmountAccepted"
+    }
+]

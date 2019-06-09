@@ -1,0 +1,16 @@
+[
+    {
+        "type": "array_basic",
+        "start": 1,
+        "finish": 60,
+        "count": 60,
+        "name": "PlotSize"
+    },
+    {
+        "type": "array_basic",
+        "start": 301,
+        "finish": 360,
+        "count": 60,
+        "name": "InitialPrice"
+    }
+]

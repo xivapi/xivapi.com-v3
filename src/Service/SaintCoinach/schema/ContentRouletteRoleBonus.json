@@ -1,0 +1,13 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 7,
+        "name": "ItemRewardType",
+        "target": "Item"
+    },
+    {
+        "type": "basic",
+        "index": 8,
+        "name": "RewardAmount"
+    }
+]

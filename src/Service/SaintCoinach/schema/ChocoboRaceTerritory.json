@@ -1,0 +1,13 @@
+[
+    {
+        "type": "link_sheet",
+        "index": 1,
+        "name": "Name",
+        "target": "GoldSaucerTextData"
+    },
+    {
+        "type": "icon",
+        "index": 2,
+        "name": "Icon"
+    }
+]

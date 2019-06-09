@@ -1,0 +1,19 @@
+[
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Model"
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "NpcYell",
+        "target": "NpcYell"
+    },
+    {
+        "type": "link_sheet",
+        "index": 4,
+        "name": "ResidentMotionType",
+        "target": "ResidentMotionType"
+    }
+]

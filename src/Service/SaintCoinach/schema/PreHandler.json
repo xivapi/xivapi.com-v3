@@ -1,0 +1,18 @@
+[
+    {
+        "type": "multiref",
+        "index": 1,
+        "name": "Target",
+        "targets": [
+            "GilShop",
+            "SpecialShop",
+            "Description"
+        ]
+    },
+    {
+        "type": "link_sheet",
+        "index": 3,
+        "name": "ActionTimeline",
+        "target": "ActionTimeline"
+    }
+]

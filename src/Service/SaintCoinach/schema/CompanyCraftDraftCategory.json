@@ -1,0 +1,22 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "Name"
+    },
+    {
+        "type": "array_group",
+        "start": 2,
+        "finish": 11,
+        "count": 10,
+        "repeat": [
+            {
+                "offset": 0,
+                "name": "CompanyCraftType",
+                "type": "link_sheet",
+                "index": null,
+                "target": "CompanyCraftType"
+            }
+        ]
+    }
+]

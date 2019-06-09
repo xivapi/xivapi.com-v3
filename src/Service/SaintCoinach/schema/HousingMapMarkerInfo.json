@@ -1,0 +1,23 @@
+[
+    {
+        "type": "basic",
+        "index": 1,
+        "name": "X"
+    },
+    {
+        "type": "basic",
+        "index": 2,
+        "name": "Y"
+    },
+    {
+        "type": "basic",
+        "index": 3,
+        "name": "Z"
+    },
+    {
+        "type": "link_sheet",
+        "index": 5,
+        "name": "Map",
+        "target": "Map"
+    }
+]
