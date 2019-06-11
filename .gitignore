@@ -3,6 +3,7 @@
 /tools/SaintCoinachCustom
 /tools/extract_*
 /data/gamedata
+/data/gamejson
 
 ###> symfony/framework-bundle ###
 /.env.local

@@ -59,6 +59,9 @@
             "config/packages/github_api.yaml"
         ]
     },
+    "league/csv": {
+        "version": "9.2.1"
+    },
     "php-http/cache-plugin": {
         "version": "1.6.0"
     },
