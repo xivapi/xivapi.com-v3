@@ -4,6 +4,7 @@
 /tools/extract_*
 /data/gamedata
 /data/gamejson
+/data/game_documents
 
 ###> symfony/framework-bundle ###
 /.env.local

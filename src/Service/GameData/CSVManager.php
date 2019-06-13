@@ -8,9 +8,9 @@ use League\Csv\Reader;
 use League\Csv\Statement;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
-class GameBuilder
+class CSVManager
 {
-    const DIRECTORY_JSON_DATA = ROOT . '/DATA/gamejson';
+    const DIRECTORY_JSON_DATA = ROOT . '/data/gamejson';
     const FOREIGN_REMOVALS = [
         '<Emphasis>',   '</Emphasis>',   '<Emphasis/>',
         '<Indent>',     '</Indent>',     '<Indent/>',
@@ -43,13 +43,13 @@ class GameBuilder
 
         foreach ($schema as $contentName => $contentSchema) {
             $console->writeln("<fg=cyan>[{$count} / {$total}]</> <comment>{$contentName}</comment>");
-    
+            
             $filenameRaw      = SaintCoinach::DIRECTORY_GAME_DATA . "/{$contentName}.csv";
             $filenameLanguage = SaintCoinach::DIRECTORY_GAME_DATA . "/{$contentName}.[lang].csv";
             
             // check for raw
             if (file_exists($filenameRaw)) {
-                $json = $this->handleCsvData([], $filenameRaw, null);
+                [$json, $types] = $this->handleCsvData([], $filenameRaw, null, true);
             } else {
                 $json = [];
                 foreach (GameLanguages::LANGUAGES as $language) {
@@ -58,7 +58,7 @@ class GameBuilder
                     // some languages (eg: chs/ko) may not have the file in their current patches
                     // this will be handled during game document build
                     if (file_exists($filename)) {
-                        $json = $this->handleCsvData($json, $filename, $language);
+                        [$json, $types] = $this->handleCsvData($json, $filename, $language);
                     }
                 }
             }
@@ -68,9 +68,13 @@ class GameBuilder
              * types as we'll use the custom schema
              */
             $filename = self::DIRECTORY_JSON_DATA . "/{$contentName}.json";
-            file_put_contents(
-                $filename, json_encode($json)
-            );
+            file_put_contents($filename, json_encode($json));
+    
+            /**
+             * Save the data types
+             */
+            $filename = self::DIRECTORY_JSON_DATA . "/{$contentName}.types.json";
+            file_put_contents($filename, json_encode($types));
             
             $count++;
         }
@@ -81,7 +85,7 @@ class GameBuilder
     /**
      * Process CSV data and returns it as a big array.
      */
-    private function handleCsvData(array $data, string $filename, ?string $language = null)
+    private function handleCsvData(array $data, string $filename, ?string $language = null, ?bool $isRaw = false)
     {
         // we only process "everything" on English, otherwise it just grabs str entries
         $isEnglish = ($language !== null && $language == 'en');
@@ -97,6 +101,12 @@ class GameBuilder
         // get types
         $stmt  = (new Statement())->offset(2)->limit(1);
         $types = $stmt->process($csv)->fetchOne();
+        
+        // column to type
+        $columnToType = [];
+        foreach ($columns as $i => $col) {
+            $columnToType[$col] = $types[$i];
+        }
     
         // get data
         $stmt    = (new Statement())->offset(3);
@@ -111,7 +121,7 @@ class GameBuilder
                 $columnType = $types[$offset];
                 
                 // skip if this is not English and column type is not str
-                if (!$isEnglish && $columnType != 'str') {
+                if ($isRaw == false && !$isEnglish && $columnType != 'str') {
                     continue;
                 }
     
@@ -130,7 +140,8 @@ class GameBuilder
                     $value = 0;
                 } elseif ($columnType == 'Image') {
                     // Keep the existing ID value.
-                    $record["{$columnName}ID"]  = $value;
+                    $data[$id]["{$columnName}ID"]  = $value;
+                    $columnToType["{$columnName}ID"] = $columnType;
                     
                     // convert icon to a url
                     $value = $this->handleImage($value);
@@ -148,8 +159,8 @@ class GameBuilder
         }
     
         // clean up and return
-        unset($csv, $columns, $types);
-        return $data;
+        unset($csv);
+        return [$data , $columnToType];
     }
     
     /**

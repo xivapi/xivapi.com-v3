@@ -3,7 +3,8 @@
 namespace App\Command\GameData;
 
 use App\Command\Traits\CommandConfigureTrait;
-use App\Service\GameData\GameBuilder;
+use App\Service\GameData\CSVManager;
+use App\Service\GameData\DocumentBuilder;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -16,22 +17,34 @@ class BuildGameDataCommand extends Command
     const COMMAND = [
         'name' => 'xiv:build:gamedata',
         'desc' => 'Build the FFXIV Game Data',
+        'args' => [
+            [ 'action', InputArgument::REQUIRED, 'Action to perform on the game data']
+        ]
     ];
     
-    /** @var GameBuilder */
-    private $gameBuilder;
+    /** @var CSVManager */
+    private $csv;
+    /** @var DocumentBuilder */
+    private $documents;
 
-    public function __construct(GameBuilder $gameBuilder, $name = null)
+    public function __construct(CSVManager $csv, DocumentBuilder $documents, $name = null)
     {
         parent::__construct($name);
         
-        $this->gameBuilder = $gameBuilder;
+        $this->csv = $csv;
+        $this->documents = $documents;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this
-            ->gameBuilder
-            ->extractCsvFilesToJson();
+        switch (strtolower($input->getArgument('action'))) {
+            case 'csv':
+                $this->csv->extractCsvFilesToJson();
+                break;
+                
+            case 'documents':
+                $this->documents->buildGameDocuments();
+                break;
+        }
     }
 }
