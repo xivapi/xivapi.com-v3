@@ -14,7 +14,8 @@
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "4.2.*",
         "symfony/process": "4.2.*",
-        "symfony/yaml": "4.2.*"
+        "symfony/yaml": "4.2.*",
+        "xivapi/lodestone-parser": "dev-major-rewrite"
     },
     "config": {
         "preferred-install": {
