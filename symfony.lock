@@ -65,6 +65,9 @@
     "nesbot/carbon": {
         "version": "2.19.2"
     },
+    "php": {
+        "version": "7.4"
+    },
     "php-http/cache-plugin": {
         "version": "1.6.0"
     },
