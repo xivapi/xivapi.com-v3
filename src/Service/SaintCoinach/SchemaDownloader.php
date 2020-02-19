@@ -41,6 +41,10 @@ class SchemaDownloader
             $releaseDate = date('F j, Y, g:i a', $version->ReleaseDate);
             $schemaDate  = date('c', $version->SchemaDate);
 
+            if ($version->On === false) {
+                continue;
+            }
+
             // header
             $this->console->writeln([
                 "",

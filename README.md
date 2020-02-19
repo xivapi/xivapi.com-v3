@@ -1,9 +1,8 @@
-# xivapi.com - v3 [![Build Status](https://travis-ci.org/xivapi/xivapi.com-v3.svg?branch=master)](https://travis-ci.org/xivapi/xivapi.com-v3)
+# XIVAPI v3
 
 
-## XDebug
-- IDE Key: PHPSTORM
-- Update `docker-compose.yml` -> `extra_hosts: "docker-host.localhost:127.0.0.1"` to your ip from `ifconfig en0`
-- Port: 5902
-- Host: docker-host.localhost
-- Use Docker container for PHP Cli Interpreter.
+### Building data
+
+- Run SaintCoinach.Cmd and run the command: `allrawexd`
+- Copy the folder into `data`, the final path should be: `data/raw-exd-all/`
+- Run the command: `php bin/console xiv:build:gamedata csv`

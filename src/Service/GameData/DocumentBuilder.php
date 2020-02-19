@@ -8,7 +8,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 class DocumentBuilder
 {
     const SCHEMA_FILENAME     = SchemaBuilder::SCHEMA_FILENAME;
-    const DIRECTORY_JSON_DATA = ROOT . '/data/gamejson';
+    const DIRECTORY_JSON_DATA = ROOT . '/data/raw-exd-all';
     const DIRECTORY_DOCUMENTS = ROOT . '/data/game_documents';
     
     private $cache = [];

@@ -1,18 +1,21 @@
 {
     "GameVersions": {
         "Official": {
+            "On": true,
             "Number": 4.58,
             "ReleaseDate": 1557828000,
             "SchemaDate": 2000000000,
             "SourceUrl": "https://eu.finalfantasyxiv.com/lodestone/special/patchnote_log/"
         },
         "Chinese": {
+            "On": false,
             "Number": 4.5,
             "ReleaseDate": 1558951200,
             "SchemaDate": 1558951200,
             "SourceUrl": "http://ff.sdo.com/web8/index.html#/patchnote"
         },
         "Korean": {
+            "On": false,
             "Number": 4.45,
             "ReleaseDate": 1556186400,
             "SchemaDate": 1556186400,

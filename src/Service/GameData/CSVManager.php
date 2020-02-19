@@ -8,9 +8,11 @@ use League\Csv\Reader;
 use League\Csv\Statement;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
+/**
+ * Converts all the fancy CSV to JSON
+ */
 class CSVManager
 {
-    const DIRECTORY_JSON_DATA = ROOT . '/data/gamejson';
     const FOREIGN_REMOVALS = [
         '<Emphasis>',   '</Emphasis>',   '<Emphasis/>',
         '<Indent>',     '</Indent>',     '<Indent/>',
@@ -24,8 +26,8 @@ class CSVManager
     {
         $console = new ConsoleOutput();
         
-        if (!is_dir(self::DIRECTORY_JSON_DATA)) {
-            mkdir(self::DIRECTORY_JSON_DATA);
+        if (!is_dir(SaintCoinach::GAME_DATA_JSON)) {
+            mkdir(SaintCoinach::GAME_DATA_JSON);
         }
         
         // grab schema
@@ -44,8 +46,8 @@ class CSVManager
         foreach ($schema as $contentName => $contentSchema) {
             $console->writeln("<fg=cyan>[{$count} / {$total}]</> <comment>{$contentName}</comment>");
             
-            $filenameRaw      = SaintCoinach::DIRECTORY_GAME_DATA . "/{$contentName}.csv";
-            $filenameLanguage = SaintCoinach::DIRECTORY_GAME_DATA . "/{$contentName}.[lang].csv";
+            $filenameRaw      = SaintCoinach::GAME_DATA . "/{$contentName}.csv";
+            $filenameLanguage = SaintCoinach::GAME_DATA . "/{$contentName}.[lang].csv";
             
             // check for raw
             if (file_exists($filenameRaw)) {
@@ -67,13 +69,13 @@ class CSVManager
              * Save the data, we don't care about column headings or
              * types as we'll use the custom schema
              */
-            $filename = self::DIRECTORY_JSON_DATA . "/{$contentName}.json";
+            $filename = SaintCoinach::GAME_DATA_JSON . "/{$contentName}.json";
             file_put_contents($filename, json_encode($json));
     
             /**
              * Save the data types
              */
-            $filename = self::DIRECTORY_JSON_DATA . "/{$contentName}.types.json";
+            $filename = SaintCoinach::GAME_DATA_JSON . "/{$contentName}.types.json";
             file_put_contents($filename, json_encode($types));
             
             $count++;

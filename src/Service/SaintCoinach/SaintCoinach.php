@@ -5,105 +5,87 @@ namespace App\Service\SaintCoinach;
 use App\Utils\Downloader;
 use Github\Api\Repo;
 use Github\Client;
-use Symfony\Component\Console\Output\ConsoleOutput;
 
 class SaintCoinach
 {
-    const DIRECTORY_TOOLS     = ROOT . '/tools/';
-    const DIRECTORY_GAME_DATA = ROOT . '/data/gamedata';
-    const SAINT_EX_FILENAME   = ROOT . '/data/schema_Official.json';
+    const GAME_TOOLS          = ROOT . '/data/game_tools';
+    const GAME_SCHEMA         = ROOT . '/data/game_schema';
+    const GAME_VERSION        = ROOT . '/data/game_schema/game.ver';
+    const GAME_DATA           = ROOT . '/data/raw-exd-all';
+    const GAME_DATA_JSON      = ROOT . '/data/raw-exd-all-json';
     const GAME_INSTALL_PATH   = 'C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn';
-
-    /** @var ConsoleOutput */
-    private $console;
-
-    public function __construct()
-    {
-        $this->console = new ConsoleOutput();
-    }
+    const GITHUB_USERNAME     = 'ufx';
+    const GITHUB_REPO         = 'SaintCoinach';
+    const GITHUB_PATH         = '/SaintCoinach/Definitions';
 
     /**
-     * Download SaintCoinach
+     * Downloads all the latest schema definitions
      */
-    public function download()
+    public function downloadLatestSchemaDefinitions()
     {
-        $this->console->writeln('Downloading SaintCoinach.Cmd');
+        $client = new Client();
 
-        // grab the latest release from github
-        $this->console->writeln('Getting latest build from github ...');
-    
         /** @var Repo $repo */
-        $repo     = (new Client())->api('repo');
-        $release  = $repo->releases()->latest('ufx', 'SaintCoinach');
-        $buildTag = $release['tag_name'];
-        
-        $this->console->writeln("Latest build: <info>{$buildTag}</info>");
+        $repo = $client->api('repo');
 
-        // check for SaintCoinach.Cmd release
-        $build = $release['assets'][1] ?? false;
-        if ($build === false) {
-            throw new \Exception('Could not find SaintCoinach.Cmd release at Download Position 1');
-        }
-        
-        // make data storage path if it does not exist
-        $this->console->writeln('Checking data directory');
-        if (is_dir(self::DIRECTORY_TOOLS) == false) {
-            mkdir(self::DIRECTORY_TOOLS);
+        // grab the latest release
+        $files = $repo->contents()->show(self::GITHUB_USERNAME, self::GITHUB_REPO, self::GITHUB_PATH);
+
+        if (empty($files)) {
+            throw new \Exception("The definition directory was empty when attempting to download the latest SaintCoinach Schemas");
         }
 
-        // Download
-        $download = $build['browser_download_url'];
-        $filename = self::DIRECTORY_TOOLS . 'SaintCoinach.Cmd.zip';
-        $this->console->writeln("Downloading: <info>{$download}</info>");
-        $this->console->writeln("Save Path: <info>{$filename}</info>");
+        // download each schema file individually
+        $combined = [];
+        foreach ($files as $file) {
+            $name = $file['name'];
+            $url  = $file['download_url'];
 
-        Downloader::save($download, $filename);
+            Downloader::save($url, self::GAME_SCHEMA ."/{$name}");
+            $combined[$name] = json_decode(file_get_contents($url), true);
+        }
 
-        // extract it
-        $this->console->writeln("Extracting: <info>{$filename}</info>");
-        $extractFolder = self::DIRECTORY_TOOLS . 'SaintCoinach.Cmd';
+        // get the game version
+        $version = trim(file_get_contents(self::GAME_VERSION));
 
-        $zip = new \ZipArchive;
-        $zip->open($filename);
-        $zip->extractTo($extractFolder);
-        $zip->close();
-
-        $this->console->writeln('Generating Bat Scripts');
-        $this->writeBatchScript($extractFolder, 'allrawexd');
-        $this->writeBatchScript($extractFolder, 'ui');
-        $this->writeBatchScript($extractFolder, 'bgm');
-        $this->writeBatchScript($extractFolder, 'maps');
-        $this->console->writeln('Finished');
+        // save game version
+        file_put_contents(self::GAME_SCHEMA ."/ex.{$version}.json", json_encode($combined, JSON_PRETTY_PRINT));
     }
 
     /**
-     * Request the schema
+     * Downloads the latest SaintCoinach releases
      */
-    public function schema()
+    public function downloadLatestSaintTools()
     {
-        if (!file_exists(self::SAINT_EX_FILENAME)) {
-            throw new \Exception("SaintCoinach schema ex.json file missing at: ". self::SAINT_EX_FILENAME);
+        $client = new Client();
+
+        /** @var Repo $repo */
+        $repo = $client->api('repo');
+
+        // get latest release
+        $files = $repo->releases()->latest(self::GITHUB_USERNAME, self::GITHUB_REPO);
+
+        // get release version
+        $version = $files['tag_name'];
+
+        // download each assets
+        foreach ($files['assets'] as $files) {
+            $name = $files['name'];
+            $uri  = $files['browser_download_url'];
+
+            // save filename
+            $save    = self::GAME_TOOLS ."/{$version}/{$name}";
+
+            $extract = str_ireplace('.zip', null, $save);
+
+            // download
+            Downloader::save($uri, $save);
+
+            // extract it
+            $zip = new \ZipArchive;
+            $zip->open($save);
+            $zip->extractTo($extract);
+            $zip->close();
         }
-
-        $schema = \GuzzleHttp\json_decode(
-            file_get_contents(self::SAINT_EX_FILENAME)
-        );
-
-        return $schema;
-    }
-
-    /**
-     * Generate a windows bat script that runs a command via SaintCoinach.Cmd
-     */
-    private function writeBatchScript($extractFolder, $command)
-    {
-        file_put_contents(
-            "{$extractFolder}/extract-{$command}.bat",
-            sprintf(
-                'SaintCoinach.Cmd.exe "%s" %s /UseDefinitionVersion',
-                self::GAME_INSTALL_PATH,
-                $command
-            )
-        );
     }
 }
