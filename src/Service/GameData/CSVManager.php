@@ -4,6 +4,7 @@ namespace App\Service\GameData;
 
 use App\Service\SaintCoinach\SaintCoinach;
 use App\Service\SaintCoinach\SchemaBuilder;
+use App\Utils\Memory;
 use League\Csv\Reader;
 use League\Csv\Statement;
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -44,7 +45,8 @@ class CSVManager
         ]);
 
         foreach ($schema as $contentName => $contentSchema) {
-            $console->writeln("<fg=cyan>[{$count} / {$total}]</> <comment>{$contentName}</comment>");
+            [$memCurrent, $memMax] = Memory::read();
+            $console->writeln("<fg=cyan>[{$count}/{$total} - Mem: {$memCurrent}/{$memMax}]</> <comment>{$contentName}</comment>");
             
             $filenameRaw      = SaintCoinach::GAME_DATA . "/{$contentName}.csv";
             $filenameLanguage = SaintCoinach::GAME_DATA . "/{$contentName}.[lang].csv";
